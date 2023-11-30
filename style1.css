@@ -1,0 +1,248 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.page {
+    background-image: url(images/fondo.png);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.page1 {
+    background-image: url(images/pag2.png);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.encabezado {
+    background-color: rgb(164, 84, 23, 0.5); /* Fondo semitransparente para el encabezado */
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0%;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 4%;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(226, 222, 178);
+    font-weight: bold;
+}
+
+nav a.bb {
+    font-size: 90px;
+    margin-left: 10%;
+    padding: 0%;
+}
+
+nav a.resto {
+    font-size: 45px;
+    color: rgb(226, 222, 178)
+}
+
+nav a.inicio {
+    color: rgb(164, 84, 23);
+    font-size: 45px;
+}
+
+nav a.resto:hover {
+    color: rgb(164, 84, 23);
+    font-size: 45px;
+}
+
+.caja {
+    background-color: rgb(164, 84, 23, 0.5); /* Fondo semitransparente del cuadro */
+    padding: 3%;
+    margin: 5%; /* Espaciado externo del cuadro */
+    margin-top: 10%;
+    text-align: center;
+    border-radius: 10px; /* Esquinas redondeadas del cuadro */
+}
+
+.caja p {
+    font-size: 40px;
+    color: rgb(226, 222, 178);
+
+}
+
+.pide {
+    background-color: rgb(164, 84, 23, 0.9);
+    margin-top: 25%;
+}
+
+.titulo {
+    margin-top: 10%;
+    margin-left: 2%;
+    font-size: 105px;
+    color: rgb(226, 222, 178);
+}
+
+.formulario {
+    width: 70%;
+    text-align: center;
+    background-color: rgb(164, 84, 23, 0.5);
+    border: 1px solid rgb(226, 222, 178);
+    margin-top: 11%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    border-radius: 2vw;
+    box-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.5);
+}
+
+.formulario h2 {
+    font-size: 43px;
+    color: rgb(226, 222, 178);
+}
+
+.formulario h3 {
+    font-size: 30px;
+    color: rgb(226, 222, 178);
+}
+
+.formulario a {
+    font-size: 38px;
+    color: rgb(226, 222, 178);
+    font-weight: bold;
+}
+
+.formulario a:hover {
+    color: rgb(164, 84, 23);
+    background-color: rgb(226, 222, 178, 0.5);
+    margin-left: 22%;
+    margin-right: 22%;
+}
+
+input {
+    border: 2px solid rgb(226, 222, 178);
+    border-radius: 5vw;
+    padding: 0.55%;
+    padding-left: 2%;
+    padding-right: 60%;
+    font-size: 15px;
+    margin: 1.7vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+label {
+    font-size: 2vh;
+    margin-top: 1vh;
+}
+
+button {
+    margin: 2%;
+    border-radius: 0.5vw;
+    padding: 0.5%;
+    padding-left: 25%;
+    padding-right: 25%;
+    cursor: pointer;
+    background-color: rgb(164, 84, 23, 0.9);
+    color: rgb(226, 222, 178);
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.fotos {
+    margin: 5%;
+    margin-top: 11%;
+}
+
+.foto {
+    border: 2px solid rgb(226, 222, 178);
+}
+
+.texto-hamburguesas {
+    color: rgb(226, 222, 178);
+    text-align: center;
+    font-size: 44px;
+}
+
+.texto-hamburguesas:hover {
+    color: rgb(164, 84, 23);
+}
+
+.galeria-pedido {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6%;
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+}
+
+.cuadrado {
+    background-color: rgb(164, 84, 23);
+    position: relative;
+    padding: 7%; 
+    border: 2px solid rgb(226, 222, 178);
+}
+
+.cuadrado p {
+    color: rgb(226, 222, 178);
+    font-size: 110%;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.photo {
+    width: 90%;
+    padding-bottom: 20%; 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 11vw;
+    height: 11vw;
+    object-fit: cover;
+    margin: 2%;
+}
+
+/* Estilo footer*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    background-color: rgb(226, 222, 178);
+    margin: 0%;
+    text-align: center;
+}
+
+.footer a {
+    font-size: 20px;
+    margin-left: 4%;
+    margin-right: 5%;
+    color: black;
+}
+
+.footer a:hover {
+    color: blue; /*Cuando pasamos el cursor por encima del contenido del pie de página, este cambia de color a azul*/
+}
+
+.logos-footer {
+    margin: 2%;
+}

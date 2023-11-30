@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style1.css">
+        <title>Byteburgers</title>
+    </head>
+<body>
+    <!--Página principal-->
+    <div class="page" id="pagina1">
+        <header class="encabezado">
+            <nav>
+                <ul>
+                    <li><a class="bb">BB</a></li>
+                    <li><a href="#pagina1" class="inicio">INICIO</a></li>
+                    <li><a href="#pagina4" class="resto">CARTA</a></li>
+                    <li><a href="#pagina6" class="resto">RESERVAR</a></li>
+                    <li><a href="#pagina8" class="resto">PIDE YA</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="caja">
+            <p>¿QUÉ HAMBURGUESA</p>
+            <p>TE APETECE HOY?</p>
+            <p class="pide">PIDE AHORA</p>
+        </section>
+        <h1 class="titulo">Byteburgers</h1>
+    </div>
+
+    <!--Página inicio sesión-->
+    <div class="page" id="pagina2">
+        <form class="formulario" id="formulario1"> 
+            <h2>Accede a tu cuenta</h2>
+            <input type="email" id="email" placeholder="EMAIL" required><br>
+            <input type="password" id="password" placeholder="PASSWORD" required><br>
+            <button type="button" id="acceder">ACCEDER</button><br>
+            <div><a href="#">¿Aún no somos bitfriends?</a></div>
+            <div><a href="#pagina3">REGÍSTRATE</a></div>
+        </form>
+    </div>
+
+    <!--Página registro-->
+    <div class="page" id="pagina3">
+        <form class="formulario" id="formulario2"> 
+            <h2>Regístrate</h2>
+            <input type="nombre" id="nombre" placeholder="Nombre" required><br>
+            <input type="apellidos" id="apellidos" placeholder="Apellidos" required><br>
+            <input type="correo" id="correo" placeholder="Correo Electrónico" required><br>
+            <input type="contraseña" id="contraseña" placeholder="Contraseña" required><br>
+            <input type="contraseña2" id="contraseña2" placeholder="Repite la contraseña" required><br>
+            <button type="button" id="crearcuenta">Crear Cuenta</button><br>
+        </form>
+    </div>
+
+    <!--Página carta-->
+    <div class="page1" id="pagina4">
+        <div class="fotos">
+            <img src="images/hamburguesas.png" alt="hamburguesas" width="470" height="366" class="foto">
+            <h2 class="texto-hamburguesas">HAMBURGUESAS</h2>
+        </div>
+        <div class="fotos">
+            <img src="images/entrantes.jpg" alt="entrantes" width="308" height="366" class="foto">
+            <h2 class="texto-hamburguesas">ENTRANTES</h2>
+        </div>
+        <div class="fotos">
+            <img src="images/postres.png" alt="postres" width="291" height="366" class="foto">
+            <h2 class="texto-hamburguesas">POSTRES</h2>
+        </div>
+    </div>
+
+    <!--Página hamburguesas-->
+    <div class="page1" id="pagina5">
+        <div class="galeria-pedido">
+            <div>
+            <div class="cuadrado">
+            <img class="photo" src="images/americana.jpg" alt="americana"></div>
+            <p>BIT CRUNCHER</p>
+            </div>
+            <div>
+            <div class="cuadrado">
+            <img class="photo" src="images/mexicana.jpg" alt="mexicana"></div>
+            <p>HACKER PICANTE</p>
+            </div>
+            <div>
+            <div class="cuadrado">
+            <img class="photo" src="images/cabra.jpg" alt="cabra"></div>
+            <p>CAMARELIZED CODE BURGUER</p>
+            </div>
+            <div>
+            <div class="cuadrado">
+            <img class="photo" src="images/bacon.jpg" alt="bacon"></div>
+            <p>BINARY BACON BLISS BURGUER</p>
+            </div>
+            <div>
+            <div class="cuadrado">
+            <img class="photo" src= "images/huevo.jpg" alt="huevo"></div>
+            <p>EGGCELENT CODE BURGUER</p>
+            </div>
+            <div>
+            <div class="cuadrado">
+            <img class="photo" src="images/costilla.jpg" alt="costilla"></div>
+            <p>PIXELATED PEPPER BURGUER</p>
+            </div>
+            <div>
+            <div class="cuadrado">
+            <img class="photo" src="images/esp.jpg" alt="esp"></div>
+            <p>RYBYTE OVERLOAD BURGUER</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <!--Página reservas-->
+    <div class="page" id="pagina6">
+        <p>Aquí las reservas</p>
+    </div>
+
+    <!--Página confirmación reserva-->
+    <div class="page" id="pagina7">
+        <p>Aquí confirmación de la reserva</p>
+    </div>
+
+    <!--Página del pedido-->
+    <div class="page" id="pagina8">
+        <p>Aquí el pedido</p>
+    </div>
+
+    <!--Página de revisión del pedido-->
+    <div class="page" id="pagina9">
+        <p>Aquí revisión del pedido</p>
+    </div>
+
+    <!--Página de pago del pedido-->
+    <div class="page" id="pagina10">
+        <p>Aquí pago del pedido</p>
+    </div>
+
+    <!--Página de confirmación del pedido-->
+    <div class="page" id="pagina11">
+        <p>Aquí confirmación del pedido</p>
+    </div>
+
+    <!--Página de seguimiento del pedido-->
+    <div class="page" id="pagina12">
+        <p>Aquí seguimiento del pedido</p>
+    </div>
+
+    <!--Pie de página-->
+    <footer class="footer">
+        <a>contacto@byteburgers.es</a>
+        <a>+34 123 456 789</a>
+        <a>Aviso Legal</a>
+        <a>Redes Sociales</a>
+        <a class="logos-footer"> <!--Imágenes redes sociales-->
+            <img src="images/twitter.png" alt="twitter" width="35" height="25">
+            <img src="images/instagram.webp" alt="instagram" width="27" height="25">
+            <img src="images/youtube.jpg" alt="youtube" width="35" height="25">
+            <img src="images/facebook.png" alt="facebook" width="27" height="25">
+        </a>
+    </footer>
+</body>
+</html>
