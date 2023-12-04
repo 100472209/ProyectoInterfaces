@@ -29,8 +29,7 @@ html, body {
 
 .encabezado {
     background-color: rgb(164, 84, 23, 0.5); /* Fondo semitransparente para el encabezado */
-    top: 0;
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 1000;
 }
@@ -68,10 +67,27 @@ nav a.inicio {
     font-size: 45px;
 }
 
+nav a.carta {
+    color: rgb(164, 84, 23);
+    font-size: 45px;
+}
+
+nav a.reservar {
+    color: rgb(164, 84, 23);
+    font-size: 45px;
+}
+
+nav a.pideya {
+    color: rgb(164, 84, 23);
+    font-size: 45px;
+}
+
 nav a.resto:hover {
     color: rgb(164, 84, 23);
     font-size: 45px;
 }
+
+
 
 .caja {
     background-color: rgb(164, 84, 23, 0.5); /* Fondo semitransparente del cuadro */
@@ -300,13 +316,63 @@ button {
 }
 
 .confirmacion {
-    text-align: center;
     color: rgb(226, 222, 178);
+    margin-top: 8%;
 }
 
 .confirmacion h2 {
-    font-size: 70px;
+    font-size: 75px;
+    text-align: center;
+    margin-left: 115%;
 }
+
+.texto-confirmacion {
+    background-color: rgb(164, 84, 23, 0.5);
+    color: rgb(226, 222, 178);
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 8%;
+}
+
+.texto-confirmacion p {
+    font-size: 40px;
+    margin: 7%;
+}
+
+
+.cuadro-pedido {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(164, 84, 23, 0.5);
+    color: rgb(226, 222, 178);
+    width: 80%; 
+    margin: 2%;
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+
+.texto-grande {
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 2%;
+}
+
+.texto-pequeño {
+    font-size: 14px;
+    margin-left: 2%;
+    margin-bottom: 1.8%;
+}
+
+.sumaelementos {
+    margin-top: 4%;
+    margin-left: 70%;
+    margin-right: 4%;
+}
+
+.actions {
+    margin-bottom: 7%;
+}
+
 
 /* Estilo footer*/
 .footer {
