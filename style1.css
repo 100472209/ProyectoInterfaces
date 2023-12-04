@@ -10,7 +10,7 @@ html, body {
 }
 
 .page {
-    background-image: url(images/fondo.png);
+    background-image: url(fondo.png);
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -19,7 +19,7 @@ html, body {
 }
 
 .page1 {
-    background-image: url(images/pag2.png);
+    background-image: url(pag2.png);
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -160,7 +160,7 @@ button {
     cursor: pointer;
     background-color: rgb(164, 84, 23, 0.9);
     color: rgb(226, 222, 178);
-    font-size: 30px;
+    font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -187,36 +187,125 @@ button {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 6%;
-    max-width: 80%;
     position: relative;
-    margin: auto;
+    margin: 6%;
+    width: 100%;
 }
 
 .cuadrado {
     background-color: rgb(164, 84, 23);
     position: relative;
-    padding: 7%; 
+    padding-left: 8%; 
+    padding-top: 7%;
+    padding-right: 7%;
     border: 2px solid rgb(226, 222, 178);
+    margin-top: 7%;
+    margin-left: 10%;
+    width: 80%;
 }
 
 .cuadrado p {
     color: rgb(226, 222, 178);
     font-size: 110%;
-    position: absolute;
+    position: relative;
     width: 100%;
     text-align: center;
 }
 
 .photo {
     width: 90%;
-    padding-bottom: 20%; 
     background-size: cover;
     background-position: center;
     position: relative;
     width: 11vw;
     height: 11vw;
     object-fit: cover;
+    border: 2px solid rgb(226, 222, 178);
+}
+
+.boton-pideya {
+    margin: 1%;
+    margin-top: 82%;
+    background-color: rgb(164, 84, 23);
+    border: 1px solid rgb(226, 222, 178);
+    border-radius: 5px;
+    color: rgb(226, 222, 178);
+    text-align: center;
+}
+
+.boton-pideya p {
+    font-size: 28px;
+    margin: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.boton-pideya:hover {
+    background-color: rgb(226, 222, 178);
+    color: rgb(164, 84, 23);
+}
+
+.cuadro-reservas {
+    width: 60%;
+    margin: 3%;
+    margin-top: 8%;
+    margin-bottom: 4.5%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: rgb(164, 84, 23, 0.5);
+    color: rgb(226, 222, 178);
+    border-radius: 1vw;
+}
+
+.horas-reservas {
     margin: 2%;
+    margin-left: 55%;
+}
+
+.texto-reserva {
+    margin: 5%;
+    margin-bottom: 9%;
+}
+
+.horas {
+    margin-bottom: 5%;
+}
+
+.boton-horas:hover {
+    background-color: rgb(226, 222, 178);
+    color: rgb(164, 84, 23);
+}
+
+.confirmar-reserva {
+    background-color: rgb(164, 84, 23);
+    color: rgb(226, 222, 178);
+    margin: 2%;
+    margin-top: 37.5%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    width: 20%;
+    text-align: center;
+    border-radius: 1vw;
+    border: 1px solid rgb(226, 222, 178)
+}
+
+.confirmar-reserva p {
+    margin: 5%;
+    font-size: 30px;
+}
+
+.confirmar-reserva:hover {
+    background-color: rgb(226, 222, 178);
+    color: rgb(164, 84, 23);
+}
+
+.confirmacion {
+    text-align: center;
+    color: rgb(226, 222, 178);
+}
+
+.confirmacion h2 {
+    font-size: 70px;
 }
 
 /* Estilo footer*/
