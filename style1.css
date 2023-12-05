@@ -323,20 +323,22 @@ button {
 .confirmacion h2 {
     font-size: 75px;
     text-align: center;
-    margin-left: 115%;
+    margin-left: 65%;
 }
 
 .texto-confirmacion {
-    background-color: rgb(164, 84, 23, 0.5);
     color: rgb(226, 222, 178);
+    background-color: rgb(164, 84, 23, 0.5);
+    margin-top: 1%;
+    margin-left: 43%;
+    width: 100%;
     text-align: center;
-    margin-top: 20%;
-    margin-bottom: 8%;
 }
 
 .texto-confirmacion p {
     font-size: 40px;
-    margin: 7%;
+    margin: 8%;
+    padding: 2%;
 }
 
 
@@ -371,6 +373,24 @@ button {
 
 .actions {
     margin-bottom: 7%;
+}
+
+.confirmacion2 {
+    font-size: 45px;
+    color: rgb(226, 222, 178);
+    margin-top: 8%;
+    margin-left: 20%;
+}
+
+.texto-confirmacion2 {
+    color: black;
+    background-color: rgb(226, 222, 178);
+    margin-top: 2%;
+    padding-left: 3%;
+    padding-bottom: 20%;
+    font-size: 30px;
+    padding-top: 1px;
+
 }
 
 
