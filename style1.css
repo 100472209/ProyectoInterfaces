@@ -302,7 +302,7 @@ button {
     width: 20%;
     text-align: center;
     border-radius: 1vw;
-    border: 1px solid rgb(226, 222, 178)
+    border: 1px solid rgb(226, 222, 178);
 }
 
 .confirmar-reserva p {
@@ -385,14 +385,69 @@ button {
 .texto-confirmacion2 {
     color: black;
     background-color: rgb(226, 222, 178);
-    margin-top: 2%;
-    padding-left: 3%;
-    padding-bottom: 20%;
+    margin-top: 1%;    
     font-size: 30px;
-    padding-top: 1px;
-
+    border-radius: 1vw;
 }
 
+.texto-confirmacion2 p {
+    margin: 2%;
+    padding-top: 2%;
+    padding-bottom: 22%;
+}
+
+.botones-pedido {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: black;
+    margin-left: 15%;
+}
+
+.bot-ped1 {
+    background-color: rgb(226, 222, 178);  
+    margin-right: 38%;
+    padding-left: 5%;
+    height: 68%;
+    margin-top: 5%;
+    border-radius: 1vw;
+    border: 2px solid rgb(164, 84, 23);
+}
+
+.bot-ped1 p {
+    font-size: 20px;
+    margin-left: 20%;
+}
+
+.bot-ped1:hover {
+    background-color: rgb(164, 84, 23);
+    color: rgb(226, 222, 178);
+    border: 2px solid rgb(226, 222, 178);
+}
+
+.pag-pago {
+    width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    color: rgb(226, 222, 178);
+    text-align: center;
+    font-size: 40px;
+}
+
+.formulario1 {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(164, 84, 23, 0.5);
+    border: 1px solid rgb(226, 222, 178);  
+    border-radius: 2vw;
+    box-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.5);
+    padding-bottom: 3%;
+}
+
+.formulario1 h2 {
+    font-size: 35px;
+    color: rgb(226, 222, 178);
+}
 
 /* Estilo footer*/
 .footer {

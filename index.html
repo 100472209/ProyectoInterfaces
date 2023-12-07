@@ -321,6 +321,14 @@
             <div class="texto-confirmacion2">
                 <p>Productos elegidos:</p>
             </div>
+            <div class="botones-pedido">
+                <div class="bot-ped1">
+                    <p>VOLVER</p>
+                </div>
+                <div class="bot-ped1">
+                    <p>SIGUIENTE</p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -338,7 +346,16 @@
                     </ul>
                 </nav>
             </header></div>
-        <p>Aquí pago del pedido</p>
+        <div class="pag-pago">
+            <h2>PAGO DEL PEDIDO</h2>
+            <form class="formulario1" id="formulario3"> 
+                <h2>DATOS BANCARIOS</h2>
+                <input type="nombre" id="nombre-pago" placeholder="Nombre del titular de la tarjeta" required><br>
+                <input type="numerotarjeta" id="numero-tarjeta" placeholder="Numero de tarjeta" required><br>
+                <input type="fecha" id="fecha-caducidad" placeholder="Fecha de caducidad" required><br>
+                <input type="codigo" id="codigo" placeholder="Código de seguridad" required><br>
+            </form>
+        </div>
     </div>
 
     <!--Página de confirmación del pedido-->
