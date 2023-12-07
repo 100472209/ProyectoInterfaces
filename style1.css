@@ -449,6 +449,42 @@ button {
     color: rgb(226, 222, 178);
 }
 
+.confirmacion3 {
+    color: rgb(226, 222, 178);
+    margin-top: 8%;
+}
+
+.confirmacion3 h2 {
+    font-size: 75px;
+    text-align: center;
+    margin-left: 70%;
+}
+
+.texto-confirmacion3 {
+    color: rgb(226, 222, 178);
+    background-color: rgb(164, 84, 23, 0.5);
+    margin-top: 1%;
+    margin-left: 52%;
+    width: 100%;
+    text-align: center;
+}
+
+.texto-confirmacion3 p {
+    font-size: 40px;
+    margin: 8%;
+    padding: 2%;
+}
+
+.boton-seguimiento {
+    color: rgb(226, 222, 178);
+    background-color: rgb(164, 84, 23);
+    font-size: 30px;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+
 /* Estilo footer*/
 .footer {
     position: fixed;
