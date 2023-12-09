@@ -404,18 +404,13 @@ button {
 }
 
 .bot-ped1 {
-    background-color: rgb(226, 222, 178);  
-    margin-right: 38%;
-    padding-left: 5%;
-    height: 68%;
-    margin-top: 5%;
+    background-color: rgb(226, 222, 178);
+    padding: 2%;
+    margin-right: 25%;
+    text-align: center;
+    font-size: 40px;
     border-radius: 1vw;
-    border: 2px solid rgb(164, 84, 23);
-}
-
-.bot-ped1 p {
-    font-size: 20px;
-    margin-left: 20%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .bot-ped1:hover {
@@ -428,7 +423,7 @@ button {
     width: 100%;
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 5%;
+    margin-top: 4.5%;
     color: rgb(226, 222, 178);
     text-align: center;
     font-size: 40px;
@@ -441,12 +436,36 @@ button {
     border: 1px solid rgb(226, 222, 178);  
     border-radius: 2vw;
     box-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.5);
-    padding-bottom: 3%;
+    padding-bottom: 2%;
 }
 
 .formulario1 h2 {
     font-size: 35px;
     color: rgb(226, 222, 178);
+}
+
+.botones-pedido2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: black;
+    margin-left: 15%;
+}
+
+.bot-ped2 {
+    background-color: rgb(226, 222, 178);
+    padding: 2%;
+    margin-right: 25%;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 1vw;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-top: 5%;
+}
+
+.bot-ped2:hover {
+    background-color: rgb(164, 84, 23);
+    color: rgb(226, 222, 178);
+    border: 2px solid rgb(226, 222, 178);
 }
 
 .confirmacion3 {
@@ -462,7 +481,7 @@ button {
 
 .texto-confirmacion3 {
     color: rgb(226, 222, 178);
-    background-color: rgb(164, 84, 23, 0.5);
+    background-color: rgb(164, 84, 23, 0.7);
     margin-top: 1%;
     margin-left: 52%;
     width: 100%;
@@ -482,6 +501,35 @@ button {
     padding: 1%;
     padding-left: 2%;
     padding-right: 2%;
+    margin-top: 39%;
+    margin-bottom: 6%;
+    margin-left: 32%;
+    border: 1px solid rgb(226, 222, 178);  
+    border-radius: 1vw;
+}
+
+.boton-seguimiento:hover {
+    background-color: rgb(226, 222, 178);
+    color: rgb(164, 84, 23);
+}
+
+.seguimiento-pedido {
+    color: rgb(226, 222, 178);
+    width: 100%;
+}
+
+.seguimiento-pedido h2 {
+    font-size: 65px;
+    margin-top: 8%;
+    margin-left: 15%;
+}
+
+.fotos-seguimiento {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(164, 84, 23, 0.7);
+    margin-left: 8%;
+    margin-right: 8%;
 }
 
 
