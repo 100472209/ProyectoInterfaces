@@ -273,6 +273,14 @@ html, body {
     z-index: 1000;
 }
 
+.user {
+    background-color: rgb(164, 84, 23, 0.7);
+    font-size: 25px;
+    padding: 0.4%;
+    margin-top: 1.5%;
+    margin-bottom: 1.8%;
+}
+
 nav ul {
     list-style: none;
     margin: 0;
@@ -298,7 +306,7 @@ nav a.bb {
 
 nav a.resto {
     font-size: 45px;
-    color: rgb(226, 222, 178)
+    color: rgb(226, 222, 178);
 }
 
 nav a.inicio {
@@ -605,13 +613,31 @@ button {
 }
 
 .sumaelementos {
-    margin-top: 4%;
-    margin-left: 70%;
-    margin-right: 4%;
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    width: 20%;
+    
 }
 
 .actions {
     margin-bottom: 7%;
+}
+
+.boton-siguiente {
+    color: rgb(226, 222, 178);
+    background-color: rgb(164, 84, 23);
+    font-size: 35px;
+    padding: 1%;
+    margin-top: 39%;
+    margin-bottom: 5.5%;
+    border-radius: 1vw;
+    border: 1px solid rgb(226, 222, 178);
+}
+
+.boton-siguiente:hover {
+    background-color: rgb(226, 222, 178);
+    color: rgb(164, 84, 23);
+    border: 1px solid rgb(164, 84, 23);
 }
 
 .confirmacion2 {
@@ -768,7 +794,15 @@ button {
     grid-template-columns: repeat(3, 1fr);
     background-color: rgb(164, 84, 23, 0.7);
     margin-left: 8%;
-    margin-right: 8%;
+    margin-right: 7%;
+    padding: 2%;
+}
+
+.texto-seguimiento {
+    color: black;
+    font-size: 30px;
+    margin-left: 12%;
+
 }
 
 
