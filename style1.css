@@ -14,7 +14,7 @@ html, body {
     }
 
     nav ul {
-        /* Adjust the layout of the navigation list on tablets */
+        /* Adjust the layout of the navigation list on tablet */
         display: flex;
         flex-direction: column;
         align-items: center;
