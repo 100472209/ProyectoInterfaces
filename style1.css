@@ -9,6 +9,7 @@ html, body {
 @media only screen and (max-width: 768px) {
     .encabezado {
         /* Adjust the padding and font size for the header on tablets */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
         padding: 10px;
         font-size: 1.2em;
     }
@@ -34,9 +35,7 @@ html, body {
 
     .titulo {
         /* Adjust the font size for the .titulo heading on tablets */
-        font-size: 1.2em;
-        margin-right: 2%;
-        margin-top: 60%;
+        display: none;
     }
     .formulario {
         /* Adjust the margin and text alignment for the form on tablets */
@@ -56,7 +55,7 @@ html, body {
     }
     .fotos {
         /* Adjust the margin and layout for the .fotos div on tablets */
-        margin: 20px;
+        
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -64,7 +63,7 @@ html, body {
 
     .foto {
         /* Adjust the width and height for the images on tablets */
-        width: 100%;
+        max-width: 100%;
         height: auto;
     }
 
@@ -228,6 +227,7 @@ html, body {
         display: flex;
         flex-direction: column;
         align-items: center;
+
     }
 }
 
