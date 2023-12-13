@@ -339,8 +339,6 @@ nav a.resto:hover {
     font-size: 45px;
 }
 
-
-
 .caja {
     background-color: rgb(164, 84, 23, 0.5); /* Fondo semitransparente del cuadro */
     padding: 3%;
@@ -353,7 +351,6 @@ nav a.resto:hover {
 .caja p {
     font-size: 40px;
     color: rgb(226, 222, 178);
-
 }
 
 .pide {
@@ -525,24 +522,46 @@ button {
     margin-top: 8%;
     margin-bottom: 4.5%;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     background-color: rgb(164, 84, 23, 0.5);
     color: rgb(226, 222, 178);
     border-radius: 1vw;
 }
 
+.foto-rest {
+    margin-left: 6%;
+}
+
 .horas-reservas {
-    margin: 2%;
-    margin-left: 55%;
+    margin-top: 17%;
+    margin-left: 25%;
+}
+
+.telfs {
+    margin-top: 8%;
+}
+
+.tel1 {
+    margin-top: 17%;
+}
+
+.tel2 {
+    margin-top: 32%;
+}
+
+.tel3 {
+    margin-top: 32%;
 }
 
 .texto-reserva {
-    margin: 5%;
-    margin-bottom: 9%;
+    margin: 8%;
+    margin-bottom: 12%;
+    margin-left: 12%;
+    font-weight: bold;
 }
 
 .horas {
-    margin-bottom: 5%;
+    margin-bottom: 18%;
 }
 
 .boton-horas:hover {
@@ -819,11 +838,30 @@ button {
     padding: 2%;
 }
 
+.foto-seg1 {
+    margin-left: 10%;
+}
+
+.foto-seg2 {
+    margin-left: 7%;
+}
+
+.foto-seg3 {
+    margin-left: 23%;
+}
+
 .texto-seguimiento {
     color: black;
     font-size: 30px;
-    margin-left: 12%;
+    margin-left: 18%;
+    font-weight: bold;
+}
 
+.texto-seguimiento3 {
+    color: black;
+    font-size: 30px;
+    margin-left: 30%;
+    font-weight: bold;
 }
 
 
