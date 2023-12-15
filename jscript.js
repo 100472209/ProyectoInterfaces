@@ -1,5 +1,6 @@
+// Script para la galería de imágenes de las hamburguesas
 let indiceCuadradoActual = 0;
-const cuadradosPorPagina = 4;
+const cuadradosPorPagina = 3;
 
 function cambiarCuadrado(direccion) {
     const cuadrados = document.querySelectorAll('.cuadrado');
@@ -19,3 +20,4 @@ function cambiarCuadrado(direccion) {
     const offset = -indiceCuadradoActual * cuadrados[0].offsetWidth;
     document.querySelector('.galeria-pedido').style.transform = `translateX(${offset}px)`;
 }
+

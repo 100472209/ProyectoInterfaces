@@ -28,6 +28,11 @@
         <section class="caja">
             <p>¿QUÉ HAMBURGUESA <br> TE APETECE HOY?</p>
             <a  class="pide" href="#pagina8">PIDE AHORA</a>
+            <div class="idioma">
+                <a>Selecciona tu idioma:<br></a>
+                <a href="#pagina1" class="bandera"><img src="banderaesp.png" width="25" height="25"> ESPAÑOL<br></a>
+                <a href="indexing.html" class="bandera"><img src="banderaingl.png" width="25" height="25"> INGLÉS</a>
+            </div>
         </section>
         <h1 class="titulo">Byteburgers</h1>
     </div>
@@ -52,8 +57,8 @@
             </header></div>
         <form class="formulario" id="formulario1">   
             <h2>Accede a tu cuenta</h2>
-            <input type="email" id="email" placeholder="EMAIL" required><br>
-            <input type="password" id="password" placeholder="PASSWORD" required><br>
+            <input type="email" id="email" placeholder="CORREO ELECTRÓNICO" required><br>
+            <input type="password" id="password" placeholder="CONTRASEÑA" required><br>
             <button type="button" id="acceder">ACCEDER</button><br>
             <div><a href="#pagina3">¿Aún no somos bitfriends?</a></div>
             <div><a href="#pagina3">REGÍSTRATE</a></div>
@@ -161,13 +166,14 @@
             <p>PIXELATED PEPPER<br>BURGUER</p></div>
             <div class="cuadrado">
             <img class="photo" src="esp.jpg" alt="esp">
-            <p>RYBYTE OVERLOAD<br>BURGUER</p></div>
-            <div class="flechas">
-            <button class="anterior" onclick="cambiarCuadrado(-1)">&#10094;</button>
-            <button class="siguiente" onclick="cambiarCuadrado(1)">&#10095;</button></div></div>
-            <!--<div class="boton-pideya">
-                <a href="#pagina8"><p>PIDE YA</p></a>
-            </div>-->
+            <p>RYBYTE OVERLOAD<br>BURGUER</p></div></div>
+            <div class="flecha-izquierda">
+            <button class="anterior" onclick="cambiarCuadrado(-1)">&#10094;</button></div>
+            <div class="flecha-derecha">
+            <button class="siguiente" onclick="cambiarCuadrado(1)">&#10095;</button></div>
+            <div class="boton-pideya">
+                <a href="#pagina8">PIDE YA</a>
+            </div>
         </div>
     </div>
 
@@ -488,7 +494,7 @@
         <a class="logos-footer"> <!--Imágenes redes sociales-->
             <img src="twitter.png" alt="twitter" width="35" height="25">
             <img src="instagram.webp" alt="instagram" width="27" height="25">
-            <img src="youtube.jpg" alt="youtube" width="35" height="25">
+            <img src="youtube.png" alt="youtube" width="35" height="25">
             <img src="facebook.png" alt="facebook" width="27" height="25">
         </a>
     </footer>

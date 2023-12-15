@@ -368,8 +368,8 @@ nav a.resto:hover {
 .caja p {
     font-size: 40px;
     color: rgb(226, 222, 178);
-    margin-bottom: 20%;
-    margin-top: 15%;
+    margin-bottom: 10%;
+    margin-top: 5%;
 }
 
 /*Botón que te lleva al página del pedido*/
@@ -397,6 +397,24 @@ nav a.resto:hover {
     color: rgb(226, 222, 178);
 }
 
+.idioma {
+    font-size: 28px;
+    margin-top: 18%;
+    color: rgb(226, 222, 178);
+    background-color: rgb(164, 84, 23);
+    padding: 1%;
+    border: 1px solid rgb(226, 222, 178);
+    border-radius: 1vw;
+}
+
+.bandera {
+    text-decoration: none;
+    color: rgb(226, 222, 178);
+}
+
+.bandera:hover {
+    color: black;
+}
 
 /*Página de inicio de sesión*/
 /*Estilo de los formularios de acceso a la cuenta y registro*/
@@ -505,10 +523,19 @@ button {
     margin-right: 5%;
 }
 
-.flechas {
+.flecha-izquierda,
+.flecha-derecha {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.flecha-izquierda {
+    left: 10px;
+}
+
+.flecha-derecha {
+    right: 10px;
 }
 
 .galeria-pedido {
@@ -561,33 +588,26 @@ button {
 
 /*Estilo del botón que lleva a la página del pedido*/
 .boton-pideya {
-    margin: 1%;
-    margin-top: 82%;
     background-color: rgb(164, 84, 23);
+    font-size: 40px;
+    margin-left: 80%;
+    padding: 0.5%;
+    text-align: center;
+    border-radius: 1vw;
     border: 1px solid rgb(226, 222, 178);
-    border-radius: 5px;
-    color: rgb(226, 222, 178);
-    text-align: center;    
 }
 
-.boton-pideya a {
+.boton-pideya a{
     text-decoration: none;
     color: rgb(226, 222, 178);
 }
 
-.boton-pideya a:hover {
-    color: rgb(164, 84, 23);
-}
-
-.boton-pideya p {
-    font-size: 38px;
-    margin: 5%;
-    padding-left: 7%;
-    padding-right: 7%;
-}
-
 .boton-pideya:hover {
     background-color: rgb(226, 222, 178);
+    border: 1px solid rgb(164, 84, 23);
+}
+
+.boton-pideya a:hover {
     color: rgb(164, 84, 23);
 }
 
