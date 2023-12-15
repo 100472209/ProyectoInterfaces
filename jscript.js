@@ -21,3 +21,4 @@ function cambiarCuadrado(direccion) {
     document.querySelector('.galeria-pedido').style.transform = `translateX(${offset}px)`;
 }
 
+
