@@ -139,6 +139,7 @@
                     </ul>
                 </nav>
             </header></div>
+        <div class="galeria-contenedor">
         <div class="galeria-pedido">
             <div class="cuadrado">
             <img class="photo" src="americana.jpg" alt="americana">
@@ -148,22 +149,25 @@
             <p>HACKER PICANTE</p></div>
             <div class="cuadrado">
             <img class="photo" src="cabra.jpg" alt="cabra">
-            <p>CAMARELIZED CODE BURGUER</p></div>
+            <p>CAMARELIZED CODE<br>BURGUER</p></div>
             <div class="cuadrado">
             <img class="photo" src="bacon.jpg" alt="bacon">
-            <p>BINARY BACON BLISS BURGUER</p></div>
+            <p>BINARY BACON BLISS<br>BURGUER</p></div>
             <div class="cuadrado">
             <img class="photo" src= "huevo.jpg" alt="huevo">
-            <p>EGGCELENT CODE BURGUER</p></div>
+            <p>EGGCELENT CODE<br>BURGUER</p></div>
             <div class="cuadrado">
             <img class="photo" src="costilla.jpg" alt="costilla">
-            <p>PIXELATED PEPPER BURGUER</p></div>
+            <p>PIXELATED PEPPER<br>BURGUER</p></div>
             <div class="cuadrado">
             <img class="photo" src="esp.jpg" alt="esp">
-            <p>RYBYTE OVERLOAD BURGUER</p></div>  
-            <div class="boton-pideya">
+            <p>RYBYTE OVERLOAD<br>BURGUER</p></div>
+            <div class="flechas">
+            <button class="anterior" onclick="cambiarCuadrado(-1)">&#10094;</button>
+            <button class="siguiente" onclick="cambiarCuadrado(1)">&#10095;</button></div></div>
+            <!--<div class="boton-pideya">
                 <a href="#pagina8"><p>PIDE YA</p></a>
-            </div>  
+            </div>-->
         </div>
     </div>
 
@@ -356,7 +360,8 @@
         <div class="confirmacion2">
             <h2>REVISIÓN DEL PEDIDO</h2>
             <div class="texto-confirmacion2">
-                <p>Productos elegidos:</p>
+                <p>Productos elegidos: 
+                    <img src="carrito.png" class="foto-carrito" width="38" height="33"></p>
             </div>
             <div class="botones-pedido">
                 <div class="bot-ped1">
@@ -487,5 +492,6 @@
             <img src="facebook.png" alt="facebook" width="27" height="25">
         </a>
     </footer>
+    <script src="jscript.js"></script>
 </body>
 </html>
