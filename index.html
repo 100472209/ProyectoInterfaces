@@ -14,23 +14,23 @@
             <nav>
                 <ul>
                     <li><a class="bb">BB</a></li>
-                    <li><a href="#pagina1" class="inicio">INICIO</a></li>
-                    <li><a href="#pagina4" class="resto">CARTA</a></li>
-                    <li><a href="#pagina6" class="resto">RESERVAR</a></li>
-                    <li><a href="#pagina8" class="resto">PEDIR</a></li>
+                    <li><a href="javascript:void(0);" onclick="goToSeccion('pagina1', false)" class="inicio">INICIO</a></li>
+                    <li><a href="javascript:void(0);" onclick="goToSeccion('pagina4', false)" class="resto">CARTA</a></li>
+                    <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', true)" class="enlace-reserva">RESERVAR</a></li>
+                    <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', true)" class="enlace-pedido">PEDIR</a></li>
                     <div class="user">
                         <img src="img/user.png" class="foto-user" width="32" height="32">
-                        <a href="#pagina2" >Inicia Sesión</a>
+                        <a href="javascript:void(0);" onclick="goToSeccion('pagina2')" >Inicia Sesión</a>
                     </div>
                 </ul>
             </nav>
         </header></div>
         <section class="caja">
             <p>¿QUÉ HAMBURGUESA <br> TE APETECE HOY?</p>
-            <a  class="pide" href="#pagina8">PIDE AHORA</a>
+            <a  class="pide" href = "javascript:void(0);" onclick="goToSeccion('pagina8', true)" >PIDE AHORA</a>
             <div class="idioma">
                 <a>Selecciona tu idioma:<br></a>
-                <a href="#pagina1" class="bandera"><img src="img/banderaesp.png" width="25" height="25"> ESPAÑOL<br></a>
+                <a href="javascript:void(0);" onclick="goToSeccion('pagina1')" class="bandera"><img src="img/banderaesp.png" width="25" height="25"> ESPAÑOL<br></a>
                 <a href="indexing.html" class="bandera"><img src="img/banderaingl.png" width="25" height="25"> INGLÉS</a>
             </div>
         </section>
@@ -44,13 +44,13 @@
                 <nav>
                     <ul>
                         <li><a class="bb">BB</a></li>
-                        <li><a href="#pagina1" class="inicio">INICIO</a></li>
-                        <li><a href="#pagina4" class="resto">CARTA</a></li>
-                        <li><a href="#pagina6" class="resto">RESERVAR</a></li>
-                        <li><a href="#pagina8" class="resto">PEDIR</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina1', false)" class="inicio">INICIO</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina4', false)" class="resto">CARTA</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', true)" class="enlace-reserva">RESERVAR</a></li>
+                        <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', true)" class="enlace-pedido">PEDIR</a></li>
                         <div class="user">
                             <img src="img/user.png" class="foto-user" width="32" height="32">
-                            <a href="#pagina2">Inicia Sesión</a>
+                            <a href="javascript:void(0);" onclick="goToSeccion('pagina2')" >Inicia Sesión</a>
                         </div>
                     </ul>
                 </nav>
@@ -60,8 +60,8 @@
             <input type="email" id="email" placeholder="CORREO ELECTRÓNICO" required><br>
             <input type="password" id="password" placeholder="CONTRASEÑA" required><br>
             <button type="button" id="acceder">ACCEDER</button><br>
-            <div class = "reg"><a href="#pagina3">¿Aún no somos bitfriends?</a></div>
-            <div class = "reg"><a href="#pagina3">REGÍSTRATE</a></div>
+            <div class = "reg"><a href="javascript:void(0);" onclick="goToSeccion('pagina3', false)">¿Aún no somos bitfriends?</a></div>
+            <div class = "reg"><a href="javascript:void(0);" onclick="goToSeccion('pagina3', false)">REGÍSTRATE</a></div>
         </form>
     </div>
 
@@ -72,13 +72,13 @@
                 <nav>
                     <ul>
                         <li><a class="bb">BB</a></li>
-                        <li><a href="#pagina1" class="inicio">INICIO</a></li>
-                        <li><a href="#pagina4" class="resto">CARTA</a></li>
-                        <li><a href="#pagina6" class="resto">RESERVAR</a></li>
-                        <li><a href="#pagina8" class="resto">PEDIR</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina1', false)" class="inicio">INICIO</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina4', false)" class="resto">CARTA</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', true)" class="enlace-reserva">RESERVAR</a></li>
+                        <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', true)" class="enlace-pedido">PEDIR</a></li>
                         <div class="user">
                             <img src="img/user.png" class="foto-user" width="32" height="32">
-                            <a href="#pagina2">Inicia Sesión</a>
+                            <a href="javascript:void(0);" onclick="goToSeccion('pagina2', false)" >Inicia Sesión</a>
                         </div>
                     </ul>
                 </nav>
@@ -101,19 +101,19 @@
                 <nav>
                     <ul>
                         <li><a class="bb">BB</a></li>
-                        <li><a href="#pagina1" class="resto">INICIO</a></li>
-                        <li><a href="#pagina4" class="carta">CARTA</a></li>
-                        <li><a href="#pagina6" class="resto">RESERVAR</a></li>
-                        <li><a href="#pagina8" class="resto">PEDIR</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina1', false)" class="inicio">INICIO</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina4', false)" class="resto">CARTA</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', true)" class="enlace-reserva">RESERVAR</a></li>
+                        <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', true)" class="enlace-pedido">PEDIR</a></li>
                         <div class="user">
                             <img src="img/user.png" class="foto-user" width="32" height="32">
-                            <a href="#pagina2">Inicia Sesión</a>
+                            <a href="javascript:void(0);" onclick="goToSeccion('pagina2', false)" >Inicia Sesión</a>
                         </div>
                     </ul>
                 </nav>
             </header></div>
         <div class="fotos">
-            <a href="#pagina5"><img src="img/hamburguesas.png" alt="hamburguesas" width="470" height="366" class="foto">
+            <a href="javascript:void(0);" onclick="goToSeccion('pagina5', false)"><img src="img/hamburguesas.png" alt="hamburguesas" width="470" height="366" class="foto">
             <h2 class="texto-hamburguesas">HAMBURGUESAS</h2></a>
         </div>
         <div class="fotos">
@@ -133,13 +133,13 @@
                 <nav>
                     <ul>
                         <li><a class="bb">BB</a></li>
-                        <li><a href="#pagina1" class="resto">INICIO</a></li>
-                        <li><a href="#pagina4" class="carta">CARTA</a></li>
-                        <li><a href="#pagina6" class="resto">RESERVAR</a></li>
-                        <li><a href="#pagina8" class="resto">PEDIR</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina1', false)" class="inicio">INICIO</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina4', false)" class="resto">CARTA</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', true)" class="enlace-reserva">RESERVAR</a></li>
+                        <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', true)" class="enlace-pedido">PEDIR</a></li>
                         <div class="user">
                             <img src="img/user.png" class="foto-user" width="32" height="32">
-                            <a href="#pagina2">Inicia Sesión</a>
+                            <a href="javascript:void(0);" onclick="goToSeccion('pagina2')" >Inicia Sesión</a>
                         </div>
                     </ul>
                 </nav>
@@ -172,7 +172,7 @@
             <div class="flecha-derecha">
             <button class="siguiente" onclick="cambiarCuadrado(1)">&#10095;</button></div>
             <div class="boton-pideya">
-                <a href="#pagina8">PIDE YA</a>
+                <a href="javascript:void(0);" onclick="goToSeccion('pagina8', true)">PIDE YA</a>
             </div>
         </div>
     </div>
@@ -184,13 +184,13 @@
                 <nav>
                     <ul>
                         <li><a class="bb">BB</a></li>
-                        <li><a href="#pagina1" class="resto">INICIO</a></li>
-                        <li><a href="#pagina4" class="resto">CARTA</a></li>
-                        <li><a href="#pagina6" class="reservar">RESERVAR</a></li>
-                        <li><a href="#pagina8" class="resto">PEDIR</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina1', false)" class="inicio">INICIO</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina4', false)" class="resto">CARTA</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', false)" class="enlace-reserva">RESERVAR</a></li>
+                        <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', false)" class="enlace-pedido">PEDIR</a></li>
                         <div class="user">
                             <img src="img/user.png" class="foto-user" width="32" height="32">
-                            <a href="#pagina2">Inicia Sesión</a>
+                            <a href="javascript:void(0);" onclick="goToSeccion('pagina2', false)" >Inicia Sesión</a>
                         </div>
                     </ul>
                 </nav>
@@ -243,7 +243,7 @@
         </div>     
         </div>
         <div class="confirmar-reserva">
-            <a href="#pagina7"><p>CONFIRMAR RESERVA</p></a>
+            <a href="javascript:void(0);" onclick="goToSeccion('pagina7', false)"><p>CONFIRMAR RESERVA</p></a>
         </div>
     </div>
 
@@ -254,13 +254,13 @@
                 <nav>
                     <ul>
                         <li><a class="bb">BB</a></li>
-                        <li><a href="#pagina1" class="resto">INICIO</a></li>
-                        <li><a href="#pagina4" class="resto">CARTA</a></li>
-                        <li><a href="#pagina6" class="reservar">RESERVAR</a></li>
-                        <li><a href="#pagina8" class="resto">PEDIR</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina1', false)" class="inicio">INICIO</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina4', false)" class="resto">CARTA</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', false)" class="resto">RESERVAR</a></li>
+                        <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', false)" class="resto">PEDIR</a></li>
                         <div class="user">
                             <img src="img/user.png" class="foto-user" width="32" height="32">
-                            <a href="#pagina2">Inicia Sesión</a>
+                            <a href="javascript:void(0);" onclick="goToSeccion('pagina2', false)" >Inicia Sesión</a>
                         </div>
                     </ul>
                 </nav>
@@ -281,13 +281,13 @@
                 <nav>
                     <ul>
                         <li><a class="bb">BB</a></li>
-                        <li><a href="#pagina1" class="resto">INICIO</a></li>
-                        <li><a href="#pagina4" class="resto">CARTA</a></li>
-                        <li><a href="#pagina6" class="resto">RESERVAR</a></li>
-                        <li><a href="#pagina8" class="pideya">PEDIR</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina1', false)" class="inicio">INICIO</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina4', false)" class="resto">CARTA</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', false)" class="resto">RESERVAR</a></li>
+                        <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', false)" class="resto">PEDIR</a></li>
                         <div class="user">
                             <img src="img/user.png" class="foto-user" width="32" height="32">
-                            <a href="#pagina2">Inicia Sesión</a>
+                            <a href="javascript:void(0);" onclick="goToSeccion('pagina2', false)" >Inicia Sesión</a>
                         </div>
                     </ul>
                 </nav>
@@ -341,7 +341,7 @@
         </div>
         </div>
         <div class="boton-siguiente">
-            <a href="#pagina9">SIGUIENTE</a>
+            <a href="javascript:void(0);" onclick="goToSeccion('pagina9', false)">SIGUIENTE</a>
         </div>
     </div>
 
@@ -352,13 +352,13 @@
                 <nav>
                     <ul>
                         <li><a class="bb">BB</a></li>
-                        <li><a href="#pagina1" class="resto">INICIO</a></li>
-                        <li><a href="#pagina4" class="resto">CARTA</a></li>
-                        <li><a href="#pagina6" class="resto">RESERVAR</a></li>
-                        <li><a href="#pagina8" class="pideya">PEDIR</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina1', false)" class="inicio">INICIO</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina4', false)" class="resto">CARTA</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', false)" class="resto">RESERVAR</a></li>
+                        <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', false)" class="resto">PEDIR</a></li>
                         <div class="user">
                             <img src="img/user.png" class="foto-user" width="32" height="32">
-                            <a href="#pagina2">Inicia Sesión</a>
+                            <a href="javascript:void(0);" onclick="goToSeccion('pagina2', false)" >Inicia Sesión</a>
                         </div>
                     </ul>
                 </nav>
@@ -367,14 +367,17 @@
             <h2>REVISIÓN DEL PEDIDO</h2>
             <div class="texto-confirmacion2">
                 <p>Productos elegidos: 
-                    <img src="img/carrito.png" class="foto-carrito" width="38" height="33"></p>
+                <img src="img/carrito.png" class="foto-carrito" width="38" height="33">
+                </p>
+                <p id="productos-elegidos"></p>
+                <p id="total-pago">Total: 0.00€</p>
             </div>
             <div class="botones-pedido">
                 <div class="bot-ped1">
-                    <a href="#pagina8">VOLVER</a>
+                    <a href="javascript:void(0);" onclick="goToSeccion('pagina8', false)">VOLVER</a>
                 </div>
                 <div class="bot-ped1">
-                    <a href="#pagina10">SIGUIENTE</a>
+                    <a href="javascript:void(0);" onclick="goToSeccion('pagina10', false)">SIGUIENTE</a>
                 </div>
             </div>
         </div>
@@ -387,13 +390,13 @@
                 <nav>
                     <ul>
                         <li><a class="bb">BB</a></li>
-                        <li><a href="#pagina1" class="resto">INICIO</a></li>
-                        <li><a href="#pagina4" class="resto">CARTA</a></li>
-                        <li><a href="#pagina6" class="resto">RESERVAR</a></li>
-                        <li><a href="#pagina8" class="pideya">PEDIR</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina1', false)" class="inicio">INICIO</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina4', false)" class="resto">CARTA</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', false)" class="resto">RESERVAR</a></li>
+                        <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', false)" class="resto">PEDIR</a></li>
                         <div class="user">
                             <img src="img/user.png" class="foto-user" width="32" height="32">
-                            <a href="#pagina2">Inicia Sesión</a>
+                            <a href="javascript:void(0);" onclick="goToSeccion('pagina2', false)" >Inicia Sesión</a>
                         </div>
                     </ul>
                 </nav>
@@ -409,10 +412,10 @@
             </form>
             <div class="botones-pedido2">
                 <div class="bot-ped2">
-                    <a href="#pagina9">VOLVER</a>
+                    <a href="javascript:void(0);" onclick="goToSeccion('pagina9', false)">VOLVER</a>
                 </div>
                 <div class="bot-ped2">
-                    <a href="#pagina11">PAGAR</a>
+                    <a href="javascript:void(0);" onclick="goToSeccion('pagina11', false)">PAGAR</a>
                 </div>
             </div>
         </div>
@@ -425,13 +428,13 @@
                 <nav>
                     <ul>
                         <li><a class="bb">BB</a></li>
-                        <li><a href="#pagina1" class="resto">INICIO</a></li>
-                        <li><a href="#pagina4" class="resto">CARTA</a></li>
-                        <li><a href="#pagina6" class="resto">RESERVAR</a></li>
-                        <li><a href="#pagina8" class="pideya">PEDIR</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina1', false)" class="inicio">INICIO</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina4', false)" class="resto">CARTA</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', false)" class="resto">RESERVAR</a></li>
+                        <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', false)" class="resto">PEDIR</a></li>
                         <div class="user">
                             <img src="img/user.png" class="foto-user" width="32" height="32">
-                            <a href="#pagina2">Inicia Sesión</a>
+                            <a href="javascript:void(0);" onclick="goToSeccion('pagina2', false)" >Inicia Sesión</a>
                         </div>
                     </ul>
                 </nav>
@@ -444,7 +447,7 @@
             </div>
         </div>
         <div class="boton-seguimiento">
-            <a href="#pagina12">SEGUIMIENTO</a>
+            <a href="javascript:void(0);" onclick="goToSeccion('pagina12', false)">SEGUIMIENTO</a>
         </div>
     </div>
 
@@ -455,17 +458,18 @@
                 <nav>
                     <ul>
                         <li><a class="bb">BB</a></li>
-                        <li><a href="#pagina1" class="resto">INICIO</a></li>
-                        <li><a href="#pagina4" class="resto">CARTA</a></li>
-                        <li><a href="#pagina6" class="resto">RESERVAR</a></li>
-                        <li><a href="#pagina8" class="pideya">PEDIR</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina1', false)" class="inicio">INICIO</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina4', false)" class="resto">CARTA</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', false)" class="resto">RESERVAR</a></li>
+                        <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', false)" class="resto">PEDIR</a></li>
                         <div class="user">
                             <img src="img/user.png" class="foto-user" width="32" height="32">
-                            <a href="#pagina2">Inicia Sesión</a>
+                            <a href="javascript:void(0);" onclick="goToSeccion('pagina2', false)" >Inicia Sesión</a>
                         </div>
                     </ul>
                 </nav>
-            </header></div>
+            </header>
+        </div>
         <div class="seguimiento-pedido">
             <h2>SEGUIMIENTO DEL PEDIDO</h2>
             <div class="fotos-seguimiento">
