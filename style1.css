@@ -266,6 +266,15 @@ html, body {
     display: flex;
 }
 
+.section {
+    display: none;
+}
+
+
+#pagina1 {
+    display: flex;
+}
+
 /*Estilo de la barra del menú*/
 .encabezado {
     background-color: rgb(164, 84, 23, 0.5); /* Fondo semitransparente para el encabezado */
