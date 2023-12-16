@@ -1,29 +1,8 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Agregar el evento click a todos los enlaces que afectan a las secciones
-    document.querySelectorAll('nav ul li a, div.fotos a, a.pide, div.user a, form.formulario.reg a, div.boton-pideya a, div.confirmar-reserva a, div.boton-siguiente a, div.confirmacion2.botones-pedido.bot-ped1 a').forEach(function(link) {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            var sectionId = this.getAttribute('href').slice(1);
-
-            // Ocultar todas las secciones
-            document.querySelectorAll('.section').forEach(function(section) {
-                section.style.display = 'none';
-            });
-
-            // Mostrar la sección correspondiente
-            var targetSection = document.getElementById(sectionId);
-            if (targetSection) {
-                targetSection.style.display = 'flex';
-            }
-        });
-    });
-    document.getElementById("crearcuenta").addEventListener("click", registerUser);
-    document.getElementById("acceder").addEventListener("click", loginUser);
-});
 
 
 let indiceCuadradoActual = 0;
 const cuadradosPorPagina = 3;
+
 
 function cambiarCuadrado(direccion) {
     const cuadrados = document.querySelectorAll('.cuadrado');
@@ -143,13 +122,17 @@ function logoutUser() {
 document.getElementById("crearcuenta").onclick = registerUser;
 document.getElementById("acceder").onclick = loginUser;
 
-function goToSeccion(sectionId) {
-    console.log(sectionId);
+function goToSeccion(sectionId, requiereSesion = false) {
+    if (requiereSesion && !haySesionIniciada()) {
+        alert("Debes iniciar sesión para acceder a esta sección.");
+        return;
+    }
+
     document.querySelectorAll('.section').forEach(function(section) {
         section.style.display = 'none';
     });
+
     var targetSection = document.getElementById(sectionId);
-    console.log(targetSection);
     if (targetSection) {
         targetSection.style.display = 'flex';
     }
@@ -174,6 +157,11 @@ function borrarCuenta() {
     // Cerrar sesión después de borrar la cuenta
     logoutUser();
 }
+
+function haySesionIniciada() {
+    return getCookie("currentUser") !== null;  // Asumiendo que "currentUser" es la cookie de sesión
+}
+
 
 
 

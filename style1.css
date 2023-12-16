@@ -335,7 +335,7 @@ nav a.bb {
     margin-right: auto; /*Empuja el elemento BB hacia la izquierda*/
 }
 
-nav a.resto {
+nav a.resto, a.enlace-pedido, a.enlace-reserva{
     font-size: 45px;
 }
 
