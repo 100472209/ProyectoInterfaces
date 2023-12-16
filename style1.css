@@ -9,7 +9,7 @@ html, body {
 
 /* Tablet (768px breakpoint) */
 @media only screen and (max-width: 768px) {
-    .encabezado {
+    #pagina1 .encabezado {
         /* Adjust the padding and font size for the header on tablets */
         display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
         padding: 10px;
@@ -30,10 +30,7 @@ html, body {
         height: 30%;
     }
 
-    .caja p {
-        /* Adjust the font size for the .caja paragraph on tablets */
-        display: none;
-    }
+
 
     .titulo {
         /* Adjust the font size for the .titulo heading on tablets */
