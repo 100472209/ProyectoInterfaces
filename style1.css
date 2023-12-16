@@ -507,7 +507,7 @@ button {
 }
 
 .fotos a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .foto {
@@ -554,7 +554,6 @@ button {
     white-space: nowrap;
     transition: transform 0.3s ease;
     margin-top: 6%;
-     /* Soluciona el espacio adicional entre los elementos en línea */
 }
 
 .cuadrado {
