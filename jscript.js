@@ -76,27 +76,42 @@ function registerUser() {
     var email = document.getElementById("correo").value;
     var password = document.getElementById("contraseña").value;
 
-    // Guardar los datos del usuario en una cookie (esto no es seguro para aplicaciones reales)
-    setCookie("username", nombre, 7);
-    setCookie("email", email, 7);
-    setCookie("password", password, 7);
+    var users = JSON.parse(getCookie("users") || "[]");
 
-    alert("Usuario registrado con éxito");
+    // Comprobar si el usuario ya existe
+    var userExists = users.some(function(user) { return user.email === email; });
+    if (userExists) {
+        alert("Este correo electrónico ya está registrado.");
+        return;
+    }
+
+    users.push({ nombre: nombre, email: email, password: password });
+
+    setCookie("users", JSON.stringify(users), 7);
 }
 
 function loginUser() {
+
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
 
-    if (email === getCookie("email") && password === getCookie("password")) {
+    var users = JSON.parse(getCookie("users") || "[]");
+
+    var user = users.find(function(u) { return u.email === email && u.password === password; });
+
+    if (user) {
+        // Usuario encontrado y contraseña correcta
+        setCookie("currentUser", user.email, 7);
+        document.querySelector('.user a').textContent = user.nombre;
         // Cambiar el texto del encabezado a nombre de usuario
         document.querySelectorAll('.encabezado .user a').forEach(function(element) {
-            element.textContent = getCookie("username");
+            element.textContent = user.nombre;
         });
         // Reemplazar el contenido del formulario con los botones de cerrar sesión y volver al inicio
         var formSection = document.getElementById("pagina2").querySelector(".formulario");
         formSection.innerHTML = `
             <button id = "cerrar_sesion" onclick="logoutUser()">Cerrar sesión</button>
+            <button id = "borrar-cuenta" onclick="borrarCuenta()">Borrar cuenta</button>
         `;
     } else {
         alert("Credenciales incorrectas.");
@@ -106,9 +121,8 @@ document.getElementById("cerrar_sesion").onclick = logoutUser();
 
 
 function logoutUser() {
-    eraseCookie("username");
-    eraseCookie("email");
-    eraseCookie("password");
+
+    eraseCookie("currentUser");
 
     // Restaurar el texto del encabezado a 'Inicia Sesión'
     document.querySelectorAll('.encabezado .user a').forEach(function(element) {
@@ -142,6 +156,25 @@ function goToSeccion(sectionId) {
     }
 }
 
+function borrarCuenta() {
+    var currentUserEmail = getCookie("currentUser");
+    if (!currentUserEmail) {
+        alert("No hay ninguna sesión iniciada.");
+        return;
+    }
+
+    var users = JSON.parse(getCookie("users") || "[]");
+
+    // Filtrar para eliminar el usuario actual
+    users = users.filter(function(user) { return user.email !== currentUserEmail; });
+
+    // Actualizar la cookie con el nuevo array de usuarios
+    setCookie("users", JSON.stringify(users), 7);
+    eraseCookie("currentUser");
+
+    // Cerrar sesión después de borrar la cuenta
+    logoutUser();
+}
 
 
 

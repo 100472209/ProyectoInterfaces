@@ -45,7 +45,7 @@ html, body {
         text-align: center;
     }
 
-    #acceder, #volver, #cerrar_sesion {
+    #acceder, #volver, #cerrar_sesion, #borrar_cuenta {
         /* Adjust the font size and padding for the button on tablets */
         font-size: 1.5em;
         padding: 10px 20px;
