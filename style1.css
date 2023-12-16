@@ -30,7 +30,10 @@ html, body {
         height: 30%;
     }
 
-
+    .caja p {
+        /* Adjust the font size for the .caja paragraph on tablets */
+        display: none;
+    }
 
     .titulo {
         /* Adjust the font size for the .titulo heading on tablets */
@@ -332,7 +335,7 @@ nav a.bb {
     margin-right: auto; /*Empuja el elemento BB hacia la izquierda*/
 }
 
-nav a.resto {
+nav a.resto, a.enlace-pedido, a.enlace-reserva{
     font-size: 45px;
 }
 
@@ -504,7 +507,7 @@ button {
 }
 
 .fotos a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .foto {
@@ -551,7 +554,6 @@ button {
     white-space: nowrap;
     transition: transform 0.3s ease;
     margin-top: 6%;
-     /* Soluciona el espacio adicional entre los elementos en línea */
 }
 
 .cuadrado {
@@ -834,7 +836,7 @@ button {
 .texto-confirmacion2 p {
     margin: 2%;
     padding-top: 2%;
-    padding-bottom: 22%;
+    padding-bottom: 2%;
 }
 
 .foto-carrito {
