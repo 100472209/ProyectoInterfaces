@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Agregar el evento click a todos los enlaces que afectan a las secciones
-    document.querySelectorAll('nav ul li a, div.fotos a, a.pide, div.user a, form.formulario.reg a, div.boton-pideya a, div.confirmar-reserva a, div.boton-siguiente a, div.botones-pedido.bot-ped1 a, div.botones-pedido2.bot-ped2 a, div.boton-seguimiento a').forEach(function(link) {
+    document.querySelectorAll('nav ul li a, div.fotos a, a.pide, div.user a, form.formulario.reg a, div.boton-pideya a, div.confirmar-reserva a, div.boton-siguiente a, div.confirmacion2.botones-pedido.bot-ped1 a').forEach(function(link) {
         link.addEventListener('click', function(e) {
             e.preventDefault();
             var sectionId = this.getAttribute('href').slice(1);
@@ -117,8 +117,6 @@ function loginUser() {
         alert("Credenciales incorrectas.");
     }
 }
-document.getElementById("cerrar_sesion").onclick = logoutUser();
-
 
 function logoutUser() {
 
@@ -146,11 +144,12 @@ document.getElementById("crearcuenta").onclick = registerUser;
 document.getElementById("acceder").onclick = loginUser;
 
 function goToSeccion(sectionId) {
+    console.log(sectionId);
     document.querySelectorAll('.section').forEach(function(section) {
         section.style.display = 'none';
     });
-
     var targetSection = document.getElementById(sectionId);
+    console.log(targetSection);
     if (targetSection) {
         targetSection.style.display = 'flex';
     }
