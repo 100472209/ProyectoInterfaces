@@ -3,6 +3,8 @@ html, body {
     padding: 0;
     height: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url(img/fondo.png);
+    background-attachment: fixed;
 }
 
 /* Tablet (768px breakpoint) */
@@ -249,7 +251,7 @@ html, body {
 }
 
 .page {
-    background-image: url(fondo.png);
+    /*background-image: url(fondo.png);*/
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -258,7 +260,6 @@ html, body {
 }
 
 .page1 {
-    background-image: url(pag2.png);
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -277,8 +278,9 @@ html, body {
 
 /*Estilo de la barra del menú*/
 .encabezado {
-    background-color: rgb(164, 84, 23, 0.5); /* Fondo semitransparente para el encabezado */
-    position: absolute;
+    background-color: rgb(164, 84, 23, 0.8); /* Fondo semitransparente para el encabezado */
+    position: fixed;
+    display: block;
     width: 100%; /*Queremos que ocupe todo el ancho de página*/
     z-index: 1000;
 }
