@@ -5,6 +5,9 @@ html, body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-image: url(img/fondo.png);
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 /* Tablet (768px breakpoint) */
@@ -94,12 +97,7 @@ html, body {
         /* Adjust the margin and text alignment for the .caja section on tablets */
         margin: 20px;
         width: 100%;
-        height: 30%;
-    }
-
-    .caja p {
-        /* Adjust the font size for the .caja paragraph on tablets */
-        display: none;
+        height: 70%;
     }
 
     .titulo {
@@ -166,10 +164,10 @@ html, body {
     .cuadro-reservas {
     /* Adjust the layout for the .cuadro-reservas div on tablets */
     display: flex;
-    width: 100%;
+    width: 75%;
     flex-direction: column;
     align-items: center;
-    height: 90vh; /* Make the div occupy the upper half of the viewport */
+    height: 80%; /* Make the div occupy the upper half of the viewport */
     overflow: auto; /* Add a scrollbar if the content overflows */
 }
 
@@ -194,7 +192,7 @@ html, body {
     .confirmar-reserva {
         /* Adjust the font size and padding for the .confirmar-reserva div on tablets */
         height:20% ;
-        width: 40%;
+        width: 50%;
         font-size: x-small;
     }
     .confirmacion {
@@ -214,6 +212,13 @@ html, body {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+        /*Página que muestra las hamburguesas*/
+    .galeria-contenedor {
+        width: 100%; /*Queremos que el contenedor ocupe todo el ancho de la página*/
+
+        
     }
 
     .texto-grande, .texto-pequeño {
@@ -249,6 +254,11 @@ html, body {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .anterior,
+    .siguiente {
+        display: none; /* Hide the arrows on tablets */
     }
 
     .formulario1 {
