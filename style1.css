@@ -1097,65 +1097,14 @@ button {
         font-size: 1.5em;
     }
 
-    .botones-pedido {
-        /* Adjust the layout for the .botones-pedido div on tablets */
-        display: flex;
-        justify-content: space-around;
-    }
-    .pag-pago {
-        /* Adjust the layout for the .pag-pago div on tablets */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .boton-pideya {
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .anterior,
     .siguiente {
         display: none; /* Hide the arrows on tablets */
-    }
-
-    .formulario1 {
-        /* Adjust the layout for the .formulario1 form on tablets */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .botones-pedido2 {
-        /* Adjust the layout for the .botones-pedido2 div on tablets */
-        display: flex;
-        justify-content: space-around;
-    }
-    .confirmacion3 {
-        /* Adjust the layout for the .confirmacion3 div on tablets */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .texto-confirmacion3 {
-        /* Adjust the margin and font size for the .texto-confirmacion3 div on tablets */
-        margin: 20px;
-        font-size: 1.5em;
-    }
-
-    .boton-seguimiento {
-        /* Adjust the layout for the .boton-seguimiento div on tablets */
-        display: flex;
-        justify-content: center;
-    }
-    .seguimiento-pedido {
-        /* Adjust the layout for the .seguimiento-pedido div on tablets */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .fotos-seguimiento {
-        /* Adjust the layout for the .fotos-seguimiento div on tablets */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .footer {
