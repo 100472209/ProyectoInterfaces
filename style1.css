@@ -335,34 +335,15 @@ nav a.bb {
     margin-right: auto; /*Empuja el elemento BB hacia la izquierda*/
 }
 
-nav a.resto, a.enlace-pedido, a.enlace-reserva{
+nav a.inicio, a.resto, a.enlace-pedido, a.enlace-reserva{
     font-size: 45px;
 }
 
-nav a.inicio {
+nav a.inicio:hover, a.resto:hover, a.enlace-pedido:hover, a.enlace-reserva:hover{
     color: rgb(164, 84, 23);
     font-size: 45px;
+    -webkit-text-stroke: 0.7px rgb(226, 222, 178); /*Borde de color para el texto*/
 }
-
-nav a.carta {
-    color: rgb(164, 84, 23);
-    font-size: 45px;
-}
-
-nav a.reservar {
-    color: rgb(164, 84, 23);
-    font-size: 45px;
-}
-
-nav a.pideya {
-    color: rgb(164, 84, 23);
-    font-size: 45px;
-}
-
-nav a.resto:hover {
-    color: rgb(164, 84, 23);
-    font-size: 45px;
-} 
 
 /*Estilo de la página principal*/
 /*Cuadro de texto*/
@@ -999,39 +980,25 @@ button {
 }
 
 /*Estilo de los pasos del seguimiento*/
+.seguimiento-pedido {
+    margin-top: 1%;
+}
+  
 .fotos-seguimiento {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-around;
+}
+  
+.foto-container {
+    display: none; /* Inicialmente oculta todas las fotos */
     background-color: rgb(164, 84, 23, 0.7);
-    margin-left: 8%;
-    margin-right: 7%;
     padding: 2%;
+    text-align: center;
+    font-weight: bold;
 }
-
-.foto-seg1 {
-    margin-left: 10%;
-}
-
-.foto-seg2 {
-    margin-left: 7%;
-}
-
-.foto-seg3 {
-    margin-left: 23%;
-}
-
+  
 .texto-seguimiento {
-    color: black;
     font-size: 30px;
-    margin-left: 18%;
-    font-weight: bold;
-}
-
-.texto-seguimiento3 {
-    color: black;
-    font-size: 30px;
-    margin-left: 30%;
-    font-weight: bold;
 }
 
 
