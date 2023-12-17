@@ -19,19 +19,19 @@
                     <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', true)" class="enlace-reserva">RESERVAR</a></li>
                     <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', true)" class="enlace-pedido">PEDIR</a></li>
                     <div class="user">
-                        <img src="img/user.png" class="foto-user" width="32" height="32">
+                        <img src="img/user.png" alt="user" class="foto-user" width="32" height="32">
                         <a href="javascript:void(0);" onclick="goToSeccion('pagina2')" >Inicia Sesión</a>
                     </div>
                 </ul>
             </nav>
         </header></div>
         <section class="caja">
-            <p>¿QUÉ HAMBURGUESA <br> TE APETECE HOY?</p>
+            <h2>¿QUÉ HAMBURGUESA <br> TE APETECE HOY?</h2>
             <a  class="pide" href = "javascript:void(0);" onclick="goToSeccion('pagina8', true)" >PIDE AHORA</a>
             <div class="idioma">
                 <a>Selecciona tu idioma:<br></a>
-                <a href="javascript:void(0);" onclick="goToSeccion('pagina1')" class="bandera"><img src="img/banderaesp.png" width="25" height="25"> ESPAÑOL<br></a>
-                <a href="indexing.html" class="bandera"><img src="img/banderaingl.png" width="25" height="25"> INGLÉS</a>
+                <a href="javascript:void(0);" onclick="goToSeccion('pagina1')" class="bandera"><img src="img/banderaesp.png" alt="españa" width="25" height="25"> ESPAÑOL<br></a>
+                <a href="indexing.html" class="bandera"><img src="img/banderaingl.png" alt="ingles" width="25" height="25"> INGLÉS</a>
             </div>
         </section>
         <h1 class="titulo">Byteburgers</h1>
@@ -49,7 +49,7 @@
                         <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', true)" class="enlace-reserva">RESERVAR</a></li>
                         <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', true)" class="enlace-pedido">PEDIR</a></li>
                         <div class="user">
-                            <img src="img/user.png" class="foto-user" width="32" height="32">
+                            <img src="img/user.png" alt="user" class="foto-user" width="32" height="32">
                             <a href="javascript:void(0);" onclick="goToSeccion('pagina2')" >Inicia Sesión</a>
                         </div>
                     </ul>
@@ -57,8 +57,10 @@
             </header></div>
         <form class="formulario" id="formulario1">   
             <h2>Accede a tu cuenta</h2>
-            <input type="email" id="email" placeholder="CORREO ELECTRÓNICO" required><br>
-            <input type="password" id="password" placeholder="CONTRASEÑA" required><br>
+            <label for="email">CORREO ELECTRÓNICO:<br></label>
+            <input type="email" id="email" required><br>
+            <label for="password">CONTRASEÑA:<br></label>
+            <input type="password" id="password" required><br>
             <button type="button" id="acceder">ACCEDER</button><br>
             <div class = "reg"><a href="javascript:void(0);" onclick="goToSeccion('pagina3', false)">¿Aún no somos bitfriends?</a></div>
             <div class = "reg"><a href="javascript:void(0);" onclick="goToSeccion('pagina3', false)">REGÍSTRATE</a></div>
@@ -83,7 +85,7 @@
                         <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', true)" class="enlace-reserva">RESERVAR</a></li>
                         <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', true)" class="enlace-pedido">PEDIR</a></li>
                         <div class="user">
-                            <img src="img/user.png" class="foto-user" width="32" height="32">
+                            <img src="img/user.png" alt="user" class="foto-user" width="32" height="32">
                             <a href="javascript:void(0);" onclick="goToSeccion('pagina2', false)" >Inicia Sesión</a>
                         </div>
                     </ul>
@@ -91,11 +93,16 @@
             </header></div>
         <form class="formulario" id="formulario2"> 
             <h2>Regístrate</h2>
-            <input type="nombre" id="nombre" placeholder="Nombre" required><br>
-            <input type="apellidos" id="apellidos" placeholder="Apellidos" required><br>
-            <input type="correo" id="correo" placeholder="Correo Electrónico" required><br>
-            <input type="contraseña" id="contraseña" placeholder="Contraseña" required><br>
-            <input type="contraseña2" id="contraseña2" placeholder="Repite la contraseña" required><br>
+            <label for="nombre">NOMBRE:<br></label>
+            <input type="nombre" id="nombre" required><br>
+            <label for="apellidos">APELLIDOS:<br></label>
+            <input type="apellidos" id="apellidos" required><br>
+            <label for="correo">CORREO ELECTRÓNICO:<br></label>
+            <input type="correo" id="correo" required><br>
+            <label for="contraseña">CONTRASEÑA:<br></label>
+            <input type="contraseña" id="contraseña" required><br>
+            <label for="contraseña2">REPETIR CONTRASEÑA:<br></label>
+            <input type="contraseña2" id="contraseña2" required><br>
             <button type="button" id="crearcuenta">Crear Cuenta</button><br>
         </form>
     </div>
@@ -112,7 +119,7 @@
                         <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', true)" class="enlace-reserva">RESERVAR</a></li>
                         <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', true)" class="enlace-pedido">PEDIR</a></li>
                         <div class="user">
-                            <img src="img/user.png" class="foto-user" width="32" height="32">
+                            <img src="img/user.png" alt="user" class="foto-user" width="32" height="32">
                             <a href="javascript:void(0);" onclick="goToSeccion('pagina2', false)" >Inicia Sesión</a>
                         </div>
                     </ul>
@@ -144,7 +151,7 @@
                         <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', true)" class="enlace-reserva">RESERVAR</a></li>
                         <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', true)" class="enlace-pedido">PEDIR</a></li>
                         <div class="user">
-                            <img src="img/user.png" class="foto-user" width="32" height="32">
+                            <img src="img/user.png" alt="user" class="foto-user" width="32" height="32">
                             <a href="javascript:void(0);" onclick="goToSeccion('pagina2')" >Inicia Sesión</a>
                         </div>
                     </ul>
@@ -195,7 +202,7 @@
                         <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', false)" class="enlace-reserva">RESERVAR</a></li>
                         <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', false)" class="enlace-pedido">PEDIR</a></li>
                         <div class="user">
-                            <img src="img/user.png" class="foto-user" width="32" height="32">
+                            <img src="img/user.png" alt="user" class="foto-user" width="32" height="32">
                             <a href="javascript:void(0);" onclick="goToSeccion('pagina2', false)" >Inicia Sesión</a>
                         </div>
                     </ul>
@@ -205,30 +212,30 @@
         <div>
             <div class="texto-reserva">
             <p>Avenida Mar Mediterráneo, 20, Leganés</p>
-            <div><img src="img/rest1.png" class="foto-rest" width="129" height="98"></div>
+            <div><img src="img/rest1.png" class="foto-rest" alt="rest" width="129" height="98"></div>
             </div>
             <div class="texto-reserva">
             <p>C.C. ParqueSur, Leganés</p>
-            <div><img src="img/rest2.png" class="foto-rest"  width="129" height="98"></div>
+            <div><img src="img/rest2.png" class="foto-rest" width="129" height="98"></div>
             </div>
             <div class="texto-reserva">
             <p>Gran Vía, 40, Madrid</p>
-            <div><img src="img/rest3.png" class="foto-rest" width="129" height="98"></div>
+            <div><img src="img/rest3.png" class="foto-rest" alt="rest" width="129" height="98"></div>
             </div>
         </div>  
         <div class="telfs">
             <div>
-                <img src="img/telefono.png" class="tel1" width="20" height="20">
+                <img src="img/telefono.png" class="tel1" alt="telf" width="20" height="20">
                 <a>916 534 890</a></div>
                 <p>28034</p>
                 <p>Estamos abiertos a partir de las 12:30<br>¡Contáctanos!</p>
             <div>
-                <img src="img/telefono.png" class="tel2" width="20" height="20">
+                <img src="img/telefono.png" class="tel2" alt="telf" width="20" height="20">
                 <a>913 585 360</a></div>
                 <p>28123</p>
                 <p>Estamos abiertos a partir de las 12:45<br>¡Contáctanos!</p>
             <div>
-                <img src="img/telefono.png" class="tel3" width="20" height="20">
+                <img src="img/telefono.png" class="tel3" alt="telf" width="20" height="20">
                 <a>914 968 544</a></div>
                 <p>28304</p>
                 <p>Estamos abiertos a partir de las 12:30<br>¡Contáctanos!</p>
@@ -265,7 +272,7 @@
                         <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', false)" class="resto">RESERVAR</a></li>
                         <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', false)" class="resto">PEDIR</a></li>
                         <div class="user">
-                            <img src="img/user.png" class="foto-user" width="32" height="32">
+                            <img src="img/user.png" class="foto-user" alt="user" width="32" height="32">
                             <a href="javascript:void(0);" onclick="goToSeccion('pagina2', false)" >Inicia Sesión</a>
                         </div>
                     </ul>
@@ -292,7 +299,7 @@
                         <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', false)" class="resto">RESERVAR</a></li>
                         <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', false)" class="resto">PEDIR</a></li>
                         <div class="user">
-                            <img src="img/user.png" class="foto-user" width="32" height="32">
+                            <img src="img/user.png" class="foto-user" alt="user" width="32" height="32">
                             <a href="javascript:void(0);" onclick="goToSeccion('pagina2', false)" >Inicia Sesión</a>
                         </div>
                     </ul>
@@ -363,7 +370,7 @@
                         <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', false)" class="resto">RESERVAR</a></li>
                         <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', false)" class="resto">PEDIR</a></li>
                         <div class="user">
-                            <img src="img/user.png" class="foto-user" width="32" height="32">
+                            <img src="img/user.png" class="foto-user" alt="user" width="32" height="32">
                             <a href="javascript:void(0);" onclick="goToSeccion('pagina2', false)" >Inicia Sesión</a>
                         </div>
                     </ul>
@@ -373,7 +380,7 @@
             <h2>REVISIÓN DEL PEDIDO</h2>
             <div class="texto-confirmacion2">
                 <p>Productos elegidos: 
-                <img src="img/carrito.png" class="foto-carrito" width="38" height="33">
+                <img src="img/carrito.png" class="foto-carrito" alt="carrito" width="38" height="33">
                 </p>
                 <p id="productos-elegidos"></p>
                 <p id="total-pago">Total: 0.00€</p>
@@ -401,20 +408,23 @@
                         <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', false)" class="resto">RESERVAR</a></li>
                         <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', false)" class="resto">PEDIR</a></li>
                         <div class="user">
-                            <img src="img/user.png" class="foto-user" width="32" height="32">
+                            <img src="img/user.png" class="foto-user" alt="user" width="32" height="32">
                             <a href="javascript:void(0);" onclick="goToSeccion('pagina2', false)" >Inicia Sesión</a>
                         </div>
                     </ul>
                 </nav>
             </header></div>
         <div class="pag-pago">
-            <h2>PAGO DEL PEDIDO</h2>
-            <form class="formulario1" id="formulario3"> 
-                <h2>DATOS BANCARIOS</h2>
-                <input type="nombre" id="nombre-pago" placeholder="Nombre del titular de la tarjeta" required><br>
-                <input type="numerotarjeta" id="numero-tarjeta" placeholder="Numero de tarjeta" required><br>
-                <input type="fecha" id="fecha-caducidad" placeholder="Fecha de caducidad" required><br>
-                <input type="codigo" id="codigo" placeholder="Código de seguridad" required><br>
+            <h2 class="text">DATOS BANCARIOS</h2>
+            <form class="formulario1" id="formulario3">              
+                <label for="nombre-pago">NOMBRE DEL TITULAR DE LA TARJETA:<br></label>
+                <input type="nombre" id="nombre-pago" required><br>
+                <label for="numero-tarjeta">NÚMERO DE TARJETA:<br></label>
+                <input type="numerotarjeta" id="numero-tarjeta" required><br>
+                <label for="fecha-caducidad">FECHA DE CADUCIDAD:<br></label>
+                <input type="fecha" id="fecha-caducidad" required><br>
+                <label for="codigo">CÓDIGO DE SEGURIDAD:<br></label>
+                <input type="codigo" id="codigo" required><br>
             </form>
             <div class="botones-pedido2">
                 <div class="bot-ped2">
@@ -439,7 +449,7 @@
                         <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', false)" class="resto">RESERVAR</a></li>
                         <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', false)" class="resto">PEDIR</a></li>
                         <div class="user">
-                            <img src="img/user.png" class="foto-user" width="32" height="32">
+                            <img src="img/user.png" class="foto-user" alt="user" width="32" height="32">
                             <a href="javascript:void(0);" onclick="goToSeccion('pagina2', false)" >Inicia Sesión</a>
                         </div>
                     </ul>
@@ -469,7 +479,7 @@
                         <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', false)" class="resto">RESERVAR</a></li>
                         <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', false)" class="resto">PEDIR</a></li>
                         <div class="user">
-                            <img src="img/user.png" class="foto-user" width="32" height="32">
+                            <img src="img/user.png" class="foto-user" alt="user" width="32" height="32">
                             <a href="javascript:void(0);" onclick="goToSeccion('pagina2', false)" >Inicia Sesión</a>
                         </div>
                     </ul>
@@ -479,17 +489,19 @@
         <div class="seguimiento-pedido">
             <h2>SEGUIMIENTO DEL PEDIDO</h2>
             <div class="fotos-seguimiento">
-                <div>
-                    <img src="img/seguimiento1.png" class="foto-seg1" width="280" height="266">
-                    <div class="texto-seguimiento"><a>EN COCINA</a></div>
-                </div>
-                <div>
-                    <img src="img/seguimiento2.png" class="foto-seg2" widht="280" height="266">
-                    <div class="texto-seguimiento"><a>EN REPARTO</a></div>
-                </div>
-                <div>
-                    <img src="img/seguimiento3.png" class="foto-seg3" width="280" height="266">
-                    <div class="texto-seguimiento3"><a>ENTREGADO</a></div>
+              <div class="foto-container">
+                <img src="img/seguimiento1.png" class="foto-seg" width="280" height="266">
+                <div class="texto-seguimiento"><a>EN COCINA</a></div>
+                <div class="cuenta-atras"></div>
+              </div>
+              <div class="foto-container">
+                <img src="img/seguimiento2.png" class="foto-seg" width="280" height="266">
+                <div class="texto-seguimiento"><a>EN REPARTO</a></div>
+                <div class="cuenta-atras"></div>
+              </div>
+              <div class="foto-container">
+                <img src="img/seguimiento3.png" class="foto-seg" width="280" height="266">
+                <div class="texto-seguimiento"><a>ENTREGADO</a></div>
                 </div>
             </div>
         </div>

@@ -8,81 +8,113 @@
     </head>
 <body>
     <!--Página principal-->
-    <div class="page section" id="pagina1">
+    <div class="page section" id="page1">
         <div>
         <header class="encabezado">
             <nav>
                 <ul>
                     <li><a class="bb">BB</a></li>
-                    <li><a href="javascript:void(0);" onclick="goToSeccion('pagina1', false)" class="inicio">HOME</a></li>
-                    <li><a href="javascript:void(0);" onclick="goToSeccion('pagina4', false)" class="resto">MENU</a></li>
-                    <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', true)" class="enlace-reserva">RESERVE</a></li>
-                    <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', true)" class="enlace-pedido">ORDER</a></li>
+                    <li><a href="javascript:void(0);" onclick="goToSeccion('page1', false)" class="inicio">HOME</a></li>
+                    <li><a href="javascript:void(0);" onclick="goToSeccion('page4', false)" class="resto">MENU</a></li>
+                    <li><a href="javascript:void(0);" onclick="goToSeccion('page6', true)" class="enlace-reserva">RESERVE</a></li>
+                    <li><a href = "javascript:void(0);" onclick="goToSeccion('page8', true)" class="enlace-pedido">ORDER</a></li>
                     <div class="user">
                         <img src="img/user.png" class="foto-user" width="32" height="32">
-                        <a href="javascript:void(0);" onclick="goToSeccion('pagina2')" >Log In</a>
+                        <a href="javascript:void(0);" onclick="goToSeccion('page2')" >Log In</a>
                     </div>
                 </ul>
             </nav>
         </header></div>
         <section class="caja">
             <p>¿WHAT BURGER DO<br>YOU FEEL TODAY?</p>
-            <a  class="pide" href = "javascript:void(0);" onclick="goToSeccion('pagina8', true)" >ORDER</a>
+            <a  class="pide" href = "javascript:void(0);" onclick="goToSeccion('page8', true)" >ORDER</a>
             <div class="idioma">
                 <a>Select your language<br></a>
                 <a href="index.html" class="bandera"><img src="img/banderaesp.png" width="25" height="25">SPANISH<br></a>
-                <a href="javascript:void(0);" onclick="goToSeccion('pagina1')" class="bandera"><img src="img/banderaingl.png" width="25" height="25">ENGLISH</a>
+                <a href="javascript:void(0);" onclick="goToSeccion('page1')" class="bandera"><img src="img/banderaingl.png" width="25" height="25">ENGLISH</a>
             </div>
         </section>
         <h1 class="titulo">Byteburgers</h1>
     </div>
 
     <!--Página inicio sesión-->
-    <div class="page" id="pagina2">
+    <div class="page section" id="page2">
         <div>
             <header class="encabezado">
                 <nav>
                     <ul>
                         <li><a class="bb">BB</a></li>
-                        <li><a href="#pagina1" class="inicio">HOME</a></li>
-                        <li><a href="#pagina4" class="resto">MENU</a></li>
-                        <li><a href="#pagina6" class="resto">RESERVE</a></li>
-                        <li><a href="#pagina8" class="resto">ORDER NOW</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page1', false)" class="inicio">HOME</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page4', false)" class="resto">MENU</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page6', true)" class="enlace-reserva">RESERVE</a></li>
+                        <li><a href = "javascript:void(0);" onclick="goToSeccion('page8', true)" class="enlace-pedido">ORDER</a></li>
                         <div class="user">
                             <img src="img/user.png" class="foto-user" width="32" height="32">
-                            <a href="#pagina2">Log in</a>
+                            <a href="javascript:void(0);" onclick="goToSeccion('page2')" >Log In</a>
                         </div>
                     </ul>
                 </nav>
             </header></div>
-        <form class="formulario" id="formulario1">   
+        <form class="formulario" id="formulario1-ing">   
             <h2>Log in to your account</h2>
-            <input type="email" id="email" placeholder="EMAIL" required><br>
-            <input type="password" id="password" placeholder="PASSWORD" required><br>
-            <button type="button" id="acceder">LOG IN</button><br>
-            <div><a href="#pagina3">Aren't we bitfriends yet?</a></div>
-            <div><a href="#pagina3">SIGN UP</a></div>
+            <input type="email" id="email-ing" placeholder="EMAIL" required><br>
+            <input type="password" id="password-ing" placeholder="PASSWORD" required><br>
+            <button type="button" id="acceder-ing">LOG IN</button><br>
+            <div class = "reg"><a href="javascript:void(0);" onclick="goToSeccion('page3', false)">Aren't we bitfriends yet?</a></div>
+            <div class = "reg"><a href="javascript:void(0);" onclick="goToSeccion('page3', false)">SIGN UP</a></div>
         </form>
     </div>
 
     <!--Página registro-->
-    <div class="page" id="pagina3">
+    <div class="page section" id="page3">
+        <div>
+            <header class="encabezado">
+                <nav>
+                    <ul>
+                        <li><a class="bb">BB</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page1', false)" class="inicio">HOME</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page4', false)" class="resto">MENU</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page6', true)" class="enlace-reserva">RESERVE</a></li>
+                        <li><a href = "javascript:void(0);" onclick="goToSeccion('page8', true)" class="enlace-pedido">ORDER</a></li>
+                        <div class="user">
+                            <img src="img/user.png" class="foto-user" width="32" height="32">
+                            <a href="javascript:void(0);" onclick="goToSeccion('page2')" >Log In</a>
+                        </div>
+                    </ul>
+                </nav>
+            </header></div>
         <form class="formulario" id="formulario2"> 
-            <h2>Sign Up</h2>
+            <h2>Regístrate</h2>
             <input type="nombre" id="nombre" placeholder="Name" required><br>
             <input type="apellidos" id="apellidos" placeholder="Surnames" required><br>
             <input type="correo" id="correo" placeholder="Email" required><br>
             <input type="contraseña" id="contraseña" placeholder="Password" required><br>
             <input type="contraseña2" id="contraseña2" placeholder="Repeat the password" required><br>
-            <button type="button" id="crearcuenta">Create Account</button><br>
+            <button type="button" id="createacount">Create Account</button><br>
         </form>
     </div>
 
     <!--Página carta-->
-    <div class="page1" id="pagina4">
+    <div class="page1 section" id="page4">
+        <div>
+            <header class="encabezado">
+                <nav>
+                    <ul>
+                        <li><a class="bb">BB</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page1', false)" class="inicio">HOME</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page4', false)" class="resto">MENU</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page6', true)" class="enlace-reserva">RESERVE</a></li>
+                        <li><a href = "javascript:void(0);" onclick="goToSeccion('page8', true)" class="enlace-pedido">ORDER</a></li>
+                        <div class="user">
+                            <img src="img/user.png" class="foto-user" width="32" height="32">
+                            <a href="javascript:void(0);" onclick="goToSeccion('page2')" >Log In</a>
+                        </div>
+                    </ul>
+                </nav>
+            </header></div>
         <div class="fotos">
-            <a href="#pagina5"><img src="img/hamburguesas.png" alt="hamburguesas" width="470" height="366" class="foto">
-            <h2 class="texto-hamburguesas">OUR BURGERS</h2></a>
+            <a href="javascript:void(0);" onclick="goToSeccion('page5', false)"><img src="img/hamburguesas.png" alt="hamburguesas" width="470" height="366" class="foto">
+            <h2 class="texto-hamburguesas">BURGERS</h2></a>
         </div>
         <div class="fotos">
             <img src="img/entrantes.jpg" alt="entrantes" width="308" height="366" class="foto">
@@ -95,7 +127,23 @@
     </div>
 
     <!--Página hamburguesas-->
-    <div class="page1" id="pagina5">
+    <div class="page1 section" id="page5">
+        <div>
+            <header class="encabezado">
+                <nav>
+                    <ul>
+                        <li><a class="bb">BB</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page1', false)" class="inicio">HOME</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page4', false)" class="resto">MENU</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page6', true)" class="enlace-reserva">RESERVE</a></li>
+                        <li><a href = "javascript:void(0);" onclick="goToSeccion('page8', true)" class="enlace-pedido">ORDER</a></li>
+                        <div class="user">
+                            <img src="img/user.png" class="foto-user" width="32" height="32">
+                            <a href="javascript:void(0);" onclick="goToSeccion('page2')" >Log In</a>
+                        </div>
+                    </ul>
+                </nav>
+            </header></div>
         <div class="galeria-contenedor">
         <div class="galeria-pedido">
             <div class="cuadrado">
@@ -124,18 +172,34 @@
             <div class="flecha-derecha">
             <button class="siguiente" onclick="cambiarCuadrado(1)">&#10095;</button></div>
             <div class="boton-pideya">
-                <a href="#pagina8">ORDER NOW</a>
+                <a href="javascript:void(0);" onclick="goToSeccion('pagina8', true)">ORDER NOW</a>
             </div>
         </div>
     </div>
 
     <!--Página reservas-->
-    <div class="page" id="pagina6">
+    <div class="page section" id="page6">
+        <div>
+            <header class="encabezado">
+                <nav>
+                    <ul>
+                        <li><a class="bb">BB</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page1', false)" class="inicio">HOME</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page4', false)" class="resto">MENU</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page6', true)" class="enlace-reserva">RESERVE</a></li>
+                        <li><a href = "javascript:void(0);" onclick="goToSeccion('page8', true)" class="enlace-pedido">ORDER</a></li>
+                        <div class="user">
+                            <img src="img/user.png" class="foto-user" width="32" height="32">
+                            <a href="javascript:void(0);" onclick="goToSeccion('page2')" >Log In</a>
+                        </div>
+                    </ul>
+                </nav>
+            </header></div>
         <div class="cuadro-reservas">
         <div>
             <div class="texto-reserva">
             <p>Mar Mediterráneo Avenue, 20, Leganés</p>
-            <div><img src="img/rest1.png" class="foto-rest" width="129" height="98"></div>          
+            <div><img src="img/rest1.png" class="foto-rest" width="129" height="98"></div>
             </div>
             <div class="texto-reserva">
             <p>C.C. ParqueSur, Leganés</p>
@@ -179,12 +243,28 @@
         </div>     
         </div>
         <div class="confirmar-reserva">
-            <a href="#pagina7"><p>CONFIRM MY BOOKING</p></a>
+            <a href="javascript:void(0);" onclick="goToSeccion('page7', false)"><p>CONFIRM MY BOOKING</p></a>
         </div>
     </div>
 
     <!--Página confirmación reserva-->
-    <div class="page" id="pagina7">
+    <div class="page section" id="page7">
+        <div>
+            <header class="encabezado">
+                <nav>
+                    <ul>
+                        <li><a class="bb">BB</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page1', false)" class="inicio">HOME</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page4', false)" class="resto">MENU</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page6', true)" class="enlace-reserva">RESERVE</a></li>
+                        <li><a href = "javascript:void(0);" onclick="goToSeccion('page8', true)" class="enlace-pedido">ORDER</a></li>
+                        <div class="user">
+                            <img src="img/user.png" class="foto-user" width="32" height="32">
+                            <a href="javascript:void(0);" onclick="goToSeccion('page2')" >Log In</a>
+                        </div>
+                    </ul>
+                </nav>
+            </header></div>
         <div class="confirmacion">
             <h2>¡THANKS!</h2>        
             <div class="texto-confirmacion">
@@ -195,7 +275,23 @@
     </div>
 
     <!--Página del pedido-->
-    <div class="page" id="pagina8">
+    <div class="page" id="page8">
+        <div>
+            <header class="encabezado">
+                <nav>
+                    <ul>
+                        <li><a class="bb">BB</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page1', false)" class="inicio">HOME</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page4', false)" class="resto">MENU</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page6', true)" class="enlace-reserva">RESERVE</a></li>
+                        <li><a href = "javascript:void(0);" onclick="goToSeccion('page8', true)" class="enlace-pedido">ORDER</a></li>
+                        <div class="user">
+                            <img src="img/user.png" class="foto-user" width="32" height="32">
+                            <a href="javascript:void(0);" onclick="goToSeccion('page2')" >Log In</a>
+                        </div>
+                    </ul>
+                </nav>
+            </header></div>
         <div class="cuadro-pedido">
         <div>
             <p class="texto-grande">Bit Cruncher (12,95€):</p>
@@ -245,53 +341,104 @@
         </div>
         </div>
         <div class="boton-siguiente">
-            <a href="#pagina9">NEXT STEP</a>
+            <a href="javascript:void(0);" onclick="goToSeccion('page9', false)">NEXT STEP</a>
         </div>
     </div>
 
     <!--Página de revisión del pedido-->
-    <div class="page" id="pagina9">
+    <div class="page" id="page9">
+        <div>
+            <header class="encabezado">
+                <nav>
+                    <ul>
+                        <li><a class="bb">BB</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page1', false)" class="inicio">HOME</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page4', false)" class="resto">MENU</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page6', true)" class="enlace-reserva">RESERVE</a></li>
+                        <li><a href = "javascript:void(0);" onclick="goToSeccion('page8', true)" class="enlace-pedido">ORDER</a></li>
+                        <div class="user">
+                            <img src="img/user.png" class="foto-user" width="32" height="32">
+                            <a href="javascript:void(0);" onclick="goToSeccion('page2')" >Log In</a>
+                        </div>
+                    </ul>
+                </nav>
+            </header></div>
         <div class="confirmacion2">
             <h2>REVIEW MY ORDER</h2>
             <div class="texto-confirmacion2">
-                <p>Selected Products:
-                    <img src="img/carrito.png" class="foto-carrito" width="38" height="33"></p>
+                <p>Productos elegidos: 
+                <img src="img/carrito.png" class="foto-carrito" width="38" height="33">
+                </p>
+                <p id="productos-elegidos-ing"></p>
+                <p id="total-pago-ing">Total: 0.00€</p>
             </div>
             <div class="botones-pedido">
                 <div class="bot-ped1">
-                    <a href="#pagina8">RETURN</a>
+                    <a href="javascript:void(0);" onclick="goToSeccion('page8', false)">RETURN</a>
                 </div>
                 <div class="bot-ped1">
-                    <a href="#pagina10">NEXT STEP</a>
+                    <a href="javascript:void(0);" onclick="goToSeccion('page10', false)">NEXT STEP</a>
                 </div>
             </div>
         </div>
     </div>
 
     <!--Página de pago del pedido-->
-    <div class="page" id="pagina10">
+    <div class="page" id="page10">
+        <div>
+            <header class="encabezado">
+                <nav>
+                    <ul>
+                        <li><a class="bb">BB</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page1', false)" class="inicio">HOME</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page4', false)" class="resto">MENU</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page6', true)" class="enlace-reserva">RESERVE</a></li>
+                        <li><a href = "javascript:void(0);" onclick="goToSeccion('page8', true)" class="enlace-pedido">ORDER</a></li>
+                        <div class="user">
+                            <img src="img/user.png" class="foto-user" width="32" height="32">
+                            <a href="javascript:void(0);" onclick="goToSeccion('page2')" >Log In</a>
+                        </div>
+                    </ul>
+                </nav>
+            </header></div>
         <div class="pag-pago">
             <h2>ORDER PAYMENT</h2>
-            <form class="formulario1" id="formulario3"> 
+            <form class="formulario1" id="formulario3-ing"> 
                 <h2>BANK DETAILS</h2>
-                <input type="nombre" id="nombre-pago" placeholder="Cardholder's name" required><br>
-                <input type="numerotarjeta" id="numero-tarjeta" placeholder="Card number" required><br>
-                <input type="fecha" id="fecha-caducidad" placeholder="Expiry date" required><br>
-                <input type="codigo" id="codigo" placeholder="Security Code" required><br>
+                <input type="nombre" id="nombre-pago-ing" placeholder="Cardholder's name" required><br>
+                <input type="numerotarjeta" id="numero-tarjeta-ing" placeholder="Card number" required><br>
+                <input type="fecha" id="fecha-caducidad-ing" placeholder="Expiry date" required><br>
+                <input type="codigo" id="codigo-ing" placeholder="Security Code" required><br>
             </form>
             <div class="botones-pedido2">
                 <div class="bot-ped2">
-                    <a href="#pagina9">RETURN</a>
+                    <a href="javascript:void(0);" onclick="goToSeccion('page9', false)">RETURN</a>
                 </div>
                 <div class="bot-ped2">
-                    <a href="#pagina11">PAY</a>
+                    <a href="javascript:void(0);" onclick="goToSeccion('page11', false)">PAY</a>
                 </div>
             </div>
         </div>
     </div>
 
     <!--Página de confirmación del pedido-->
-    <div class="page" id="pagina11">
+    <div class="page" id="page11">
+        <div>
+            <header class="encabezado">
+                <nav>
+                    <ul>
+                        <li><a class="bb">BB</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page1', false)" class="inicio">HOME</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page4', false)" class="resto">MENU</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page6', true)" class="enlace-reserva">RESERVE</a></li>
+                        <li><a href = "javascript:void(0);" onclick="goToSeccion('page8', true)" class="enlace-pedido">ORDER</a></li>
+                        <div class="user">
+                            <img src="img/user.png" class="foto-user" width="32" height="32">
+                            <a href="javascript:void(0);" onclick="goToSeccion('page2')" >Log In</a>
+                        </div>
+                    </ul>
+                </nav>
+            </header></div>
         <div class="confirmacion3">
             <h2>¡THANKS!</h2>        
             <div class="texto-confirmacion3">
@@ -300,30 +447,49 @@
             </div>
         </div>
         <div class="boton-seguimiento">
-            <a href="#pagina12">TRACKING</a>
+            <a href="javascript:void(0);" onclick="goToSeccion('page12', false)">TRACKING</a>
         </div>
     </div>
 
     <!--Página de seguimiento del pedido-->
-    <div class="page" id="pagina12">
+    <div class="page" id="page12">
+        <div>
+            <header class="encabezado">
+                <nav>
+                    <ul>
+                        <li><a class="bb">BB</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page1', false)" class="inicio">HOME</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page4', false)" class="resto">MENU</a></li>
+                        <li><a href="javascript:void(0);" onclick="goToSeccion('page6', true)" class="enlace-reserva">RESERVE</a></li>
+                        <li><a href = "javascript:void(0);" onclick="goToSeccion('page8', true)" class="enlace-pedido">ORDER</a></li>
+                        <div class="user">
+                            <img src="img/user.png" class="foto-user" width="32" height="32">
+                            <a href="javascript:void(0);" onclick="goToSeccion('page2')" >Log In</a>
+                        </div>
+                    </ul>
+                </nav>
+            </header></div>
         <div class="seguimiento-pedido">
             <h2>ORDER TRACKING</h2>
             <div class="fotos-seguimiento">
-                <div>
-                    <img src="img/seguimiento1.png" class="foto-seg1" width="280" height="266">
+                <div class="foto-container">
+                    <img src="img/seguimiento1.png" class="foto-seg" width="280" height="266">
                     <div class="texto-seguimiento"><a>COOKING IT</a></div>
+                    <div class="cuenta-atras"></div>
                 </div>
-                <div>
-                    <img src="img/seguimiento2.png" class="foto-seg2" widht="280" height="266">
+                <div class="foto-container">
+                    <img src="img/seguimiento2.png" class="foto-seg" widht="280" height="266">
                     <div class="texto-seguimiento"><a>DELIVERING</a></div>
+                    <div class="cuenta-atras"></div>
                 </div>
-                <div>
-                    <img src="img/seguimiento3.png" class="foto-seg3" width="280" height="266">
-                    <div class="texto-seguimiento3"><a>DELIVERED</a></div>
+                <div class="foto-container">
+                    <img src="img/seguimiento3.png" class="foto-seg" width="280" height="266">
+                    <div class="texto-seguimiento"><a>DELIVERED</a></div>
                 </div>
             </div>
         </div>
     </div>
+
 
     <!--Pie de página-->
     <footer class="footer">
