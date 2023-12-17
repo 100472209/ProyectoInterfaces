@@ -10,12 +10,79 @@ html, body {
 /* Tablet (768px breakpoint) */
 @media only screen and (max-width: 768px) {
     #pagina1 .encabezado {
-        /* Adjust the padding and font size for the header on tablets */
+        /* Ajustes tablet para el header de la pagina de inicio */
         display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
         padding: 10px;
         font-size: 1.2em;
     }
 
+    #pagina2 .encabezado {
+        /* Ajustes tablet para el header de la pagina de inicio de sesión */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina3 .encabezado {
+        /* Ajustes tablet para el header de la pagina de registro de usuario */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina4 .encabezado {
+        /* Ajustes tablet para el header de la pagina de la carta */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina5 .encabezado {
+        /* Ajustes tablet para el header de la pagina de las hamburguesas */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina6 .encabezado {
+        /* Ajustes tablet para el header de la pagina de reserva */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina7 .encabezado {
+        /* Ajustes tablet para el header de la pagina de confirmación de reserva */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    
+    }
+    #pagina8 .encabezado {
+        /* Ajustes tablet para el header de la pagina de pedir */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina9 .encabezado {
+        /* Ajustes tablet para el header de la pagina de revisión del pedido */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina10 .encabezado {
+        /* Ajustes tablet para el header de la pagina de pago del pedido */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina11 .encabezado {
+        /* Ajustes tablet para el header de la pagina de confirmacion del pedido */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina12 .encabezado {
+        /* Ajustes tablet para el header de la pagina de seguimiento del pedido */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
     nav ul {
         /* Adjust the layout of the navigation list on tablet */
         display: flex;
@@ -97,11 +164,14 @@ html, body {
         padding: 10px 20px;
     }
     .cuadro-reservas {
-        /* Adjust the layout for the .cuadro-reservas div on tablets */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    /* Adjust the layout for the .cuadro-reservas div on tablets */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh; /* Make the div occupy the upper half of the viewport */
+    overflow: auto; /* Add a scrollbar if the content overflows */
+}
 
     .texto-reserva {
         /* Adjust the margin for the .texto-reserva div on tablets */
@@ -123,8 +193,9 @@ html, body {
 
     .confirmar-reserva {
         /* Adjust the font size and padding for the .confirmar-reserva div on tablets */
-        font-size: 1.5em;
-        padding: 10px 20px;
+        height:20% ;
+        width: 40%;
+        font-size: x-small;
     }
     .confirmacion {
         /* Adjust the layout for the .confirmacion div on tablets */
@@ -226,7 +297,7 @@ html, body {
 
     .footer {
         /* Adjust the layout for the .footer div on tablets */
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
 
