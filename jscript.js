@@ -123,10 +123,10 @@ document.getElementById("crearcuenta").onclick = registerUser;
 document.getElementById("acceder").onclick = loginUser;
 
 function goToSeccion(sectionId, requiereSesion = false) {
-    //if (requiereSesion && !haySesionIniciada()) {
-        //alert("Debes iniciar sesión para acceder a esta sección.");
-        //return;
-    //}
+    if (requiereSesion && !haySesionIniciada()) {
+        alert("Debes iniciar sesión para acceder a esta sección.");
+        return;
+    }
 
     document.querySelectorAll('.section').forEach(function(section) {
         section.style.display = 'none';
