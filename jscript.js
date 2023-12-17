@@ -18,8 +18,23 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+    var botonMenu = document.querySelector('.menu-icon');
+    var menuMovil = document.querySelector('.mobile-menu');
 
+    botonMenu.addEventListener('click', function() {
+        // Alternar la visibilidad del menú cada vez que se hace clic en el botón
+        if (menuMovil.style.display === 'flex') {
+            menuMovil.style.display = 'none';
+        } else {
+            menuMovil.style.display = 'flex';
+            menuMovil.style.flexDirection = 'column';
+        }
+    });
 });
+
+
+
+
 var Boton = document.getElementById('boton-conf');
 Boton.addEventListener('click', confirmarReserva);
 Boton.addEventListener('click', function (){goToSeccion('pagina7', false);});
@@ -155,7 +170,7 @@ function logoutUser() {
 document.getElementById("crearcuenta").onclick = registerUser;
 document.getElementById("acceder").onclick = loginUser;
 
-function goToSeccion(sectionId, requiereSesion = false) {
+function goToSeccion(sectionId, requiereSesion) {
     if (requiereSesion && !haySesionIniciada()) {
         alert("Debes iniciar sesión para acceder a esta sección.");
         return;
@@ -319,6 +334,7 @@ function confirmarReserva() {
         alert("Por favor, selecciona una hora para tu reserva.");
     }
 }
+
 
 // Script para seguimiento 
 document.addEventListener('DOMContentLoaded', function () {
