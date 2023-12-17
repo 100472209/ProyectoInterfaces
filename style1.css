@@ -430,6 +430,8 @@ nav a.resto:hover {
 /*Página de inicio de sesión*/
 /*Estilo de los formularios de acceso a la cuenta y registro*/
 .formulario {
+    display: flex;
+    flex-direction: column;
     width: 70%; 
     text-align: center;
     background-color: rgb(164, 84, 23, 0.5);
@@ -479,6 +481,27 @@ input {
 label {
     font-size: 2vh;
     margin-top: 1vh;
+}
+
+#tus-reservas{
+    display: none;
+}
+
+
+.label-reservas {
+    background-color: rgb(164, 84, 23, 0.5);
+    color: white;
+    border: 1px solid rgb(226, 222, 178);
+    font-size: 2vh;
+    margin-top: 1vh;
+    margin-left: 2%;
+}
+
+.texto-reservas {
+    color: white;
+    font-size: 2vh;
+    margin-top: 1vh;
+    margin-left: 2%;
 }
 
 button {
@@ -673,7 +696,7 @@ button {
     margin-bottom: 18%;
 }
 
-.boton-horas:hover {
+.boton-horas:hover, .boton-horas.seleccionado {
     background-color: rgb(226, 222, 178);
     color: rgb(164, 84, 23);
 }
