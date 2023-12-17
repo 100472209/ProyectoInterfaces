@@ -343,7 +343,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (index < fotos.length) {
         const cuentaAtras = fotos[index].querySelector('.cuenta-atras');
   
-        // Verifica si la página está visible antes de iniciar la cuenta atrás
+        //  Verifica si la página está visible antes de iniciar la cuenta atrás
         if (!document.hidden) {
           fotos[index].style.display = 'block';
           iniciarCuentaAtras(cuentaAtras, 10);
@@ -356,7 +356,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   
-    // Inicia el proceso
+    // Inicio del proceso
     mostrarSiguienteFoto(0);
   });
   
