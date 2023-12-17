@@ -10,322 +10,12 @@ html, body {
     background-size: cover;
 }
 
-/* Tablet (768px breakpoint) */
-@media only screen and (max-width: 768px) {
-    #pagina1 .encabezado {
-        /* Ajustes tablet para el header de la pagina de inicio */
-        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
-        padding: 10px;
-        font-size: 1.2em;
-    }
-
-    #pagina2 .encabezado {
-        /* Ajustes tablet para el header de la pagina de inicio de sesión */
-        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
-        padding: 10px;
-        font-size: 1.2em;
-    }
-    #pagina3 .encabezado {
-        /* Ajustes tablet para el header de la pagina de registro de usuario */
-        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
-        padding: 10px;
-        font-size: 1.2em;
-    }
-    #pagina4 .encabezado {
-        /* Ajustes tablet para el header de la pagina de la carta */
-        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
-        padding: 10px;
-        font-size: 1.2em;
-    }
-    #pagina5 .encabezado {
-        /* Ajustes tablet para el header de la pagina de las hamburguesas */
-        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
-        padding: 10px;
-        font-size: 1.2em;
-    }
-    #pagina6 .encabezado {
-        /* Ajustes tablet para el header de la pagina de reserva */
-        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
-        padding: 10px;
-        font-size: 1.2em;
-    }
-    #pagina7 .encabezado {
-        /* Ajustes tablet para el header de la pagina de confirmación de reserva */
-        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
-        padding: 10px;
-        font-size: 1.2em;
-    
-    }
-    #pagina8 .encabezado {
-        /* Ajustes tablet para el header de la pagina de pedir */
-        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
-        padding: 10px;
-        font-size: 1.2em;
-    }
-    #pagina9 .encabezado {
-        /* Ajustes tablet para el header de la pagina de revisión del pedido */
-        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
-        padding: 10px;
-        font-size: 1.2em;
-    }
-    #pagina10 .encabezado {
-        /* Ajustes tablet para el header de la pagina de pago del pedido */
-        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
-        padding: 10px;
-        font-size: 1.2em;
-    }
-    #pagina11 .encabezado {
-        /* Ajustes tablet para el header de la pagina de confirmacion del pedido */
-        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
-        padding: 10px;
-        font-size: 1.2em;
-    }
-    #pagina12 .encabezado {
-        /* Ajustes tablet para el header de la pagina de seguimiento del pedido */
-        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
-        padding: 10px;
-        font-size: 1.2em;
-    }
-    nav ul {
-        /* Adjust the layout of the navigation list on tablet */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .caja {
-        /* Adjust the margin and text alignment for the .caja section on tablets */
-        margin: 20px;
-        width: 100%;
-        height: 70%;
-    }
-
-    .titulo {
-        /* Adjust the font size for the .titulo heading on tablets */
-        display: none;
-    }
-    .formulario {
-        /* Adjust the margin and text alignment for the form on tablets */
-        margin: 20px;
-        text-align: center;
-    }
-
-    #acceder, #volver, #cerrar_sesion, #borrar_cuenta {
-        /* Adjust the font size and padding for the button on tablets */
-        font-size: 1.5em;
-        padding: 10px 20px;
-    }
-    #crearcuenta {
-        /* Adjust the font size and padding for the button on tablets */
-        font-size: 1.5em;
-        padding: 10px 20px;
-    }
-    .fotos {
-        /* Adjust the margin and layout for the .fotos div on tablets */
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .foto {
-        /* Adjust the width and height for the images on tablets */
-        max-width: 100%;
-        height: auto;
-    }
-
-    .texto-hamburguesas {
-        /* Adjust the font size for the .texto-hamburguesas heading on tablets */
-        font-size: 1.5em;
-    }
-    .galeria-pedido {
-        /* Adjust the layout for the .galeria-pedido div on tablets */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cuadrado {
-        /* Adjust the margin for the .cuadrado div on tablets */
-        margin: 20px;
-    }
-
-    .photo {
-        /* Adjust the width and height for the images on tablets */
-        width: 100%;
-        height: auto;
-    }
-
-    .boton-pideya {
-        /* Adjust the font size and padding for the .boton-pideya div on tablets */
-        font-size: 1.5em;
-        padding: 10px 20px;
-    }
-    .cuadro-reservas {
-    /* Adjust the layout for the .cuadro-reservas div on tablets */
-    display: flex;
-    width: 75%;
-    flex-direction: column;
-    align-items: center;
-    height: 80%; /* Make the div occupy the upper half of the viewport */
-    overflow: auto; /* Add a scrollbar if the content overflows */
+.confirmar-reserva p {
+    margin: 5%;
+    font-size: 30px;
 }
 
-    .texto-reserva {
-        /* Adjust the margin for the .texto-reserva div on tablets */
-        margin: 20px;
-    }
 
-    .horas-reservas {
-        /* Adjust the layout for the .horas-reservas div on tablets */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .boton-horas {
-        /* Adjust the font size and padding for the .boton-horas button on tablets */
-        font-size: 1.5em;
-        padding: 10px 20px;
-    }
-
-    .confirmar-reserva {
-        /* Adjust the font size and padding for the .confirmar-reserva div on tablets */
-        height:20% ;
-        width: 50%;
-        font-size: x-small;
-    }
-    .confirmacion {
-        /* Adjust the layout for the .confirmacion div on tablets */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .texto-confirmacion {
-        /* Adjust the margin and font size for the .texto-confirmacion div on tablets */
-        margin: 20px;
-        font-size: 1.5em;
-    }
-    .cuadro-pedido {
-        /* Adjust the layout for the .cuadro-pedido div on tablets */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-        /*Página que muestra las hamburguesas*/
-    .galeria-contenedor {
-        width: 100%; /*Queremos que el contenedor ocupe todo el ancho de la página*/
-
-        
-    }
-
-    .texto-grande, .texto-pequeño {
-        /* Adjust the font size for the .texto-grande and .texto-pequeño paragraphs on tablets */
-        font-size: 1.5em;
-    }
-
-    .actions {
-        /* Adjust the layout for the .actions div on tablets */
-        display: flex;
-        justify-content: space-around;
-    }
-    .confirmacion2 {
-        /* Adjust the layout for the .confirmacion2 div on tablets */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .texto-confirmacion2 {
-        /* Adjust the margin and font size for the .texto-confirmacion2 div on tablets */
-        margin: 20px;
-        font-size: 1.5em;
-    }
-
-    .botones-pedido {
-        /* Adjust the layout for the .botones-pedido div on tablets */
-        display: flex;
-        justify-content: space-around;
-    }
-    .pag-pago {
-        /* Adjust the layout for the .pag-pago div on tablets */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .anterior,
-    .siguiente {
-        display: none; /* Hide the arrows on tablets */
-    }
-
-    .formulario1 {
-        /* Adjust the layout for the .formulario1 form on tablets */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .botones-pedido2 {
-        /* Adjust the layout for the .botones-pedido2 div on tablets */
-        display: flex;
-        justify-content: space-around;
-    }
-    .confirmacion3 {
-        /* Adjust the layout for the .confirmacion3 div on tablets */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .texto-confirmacion3 {
-        /* Adjust the margin and font size for the .texto-confirmacion3 div on tablets */
-        margin: 20px;
-        font-size: 1.5em;
-    }
-
-    .boton-seguimiento {
-        /* Adjust the layout for the .boton-seguimiento div on tablets */
-        display: flex;
-        justify-content: center;
-    }
-    .seguimiento-pedido {
-        /* Adjust the layout for the .seguimiento-pedido div on tablets */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .fotos-seguimiento {
-        /* Adjust the layout for the .fotos-seguimiento div on tablets */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer {
-        /* Adjust the layout for the .footer div on tablets */
-        display: none;
-        flex-direction: column;
-        align-items: center;
-
-    }
-}
-
-/* Mobile Styles (600px and below) */
-@media only screen and (max-width: 600px) {
-    .encabezado {
-        /* Adjust styles for the header on mobile phones */
-    }
-
-    nav ul {
-        /* Adjust styles for the navigation on mobile phones */
-    }
-
-    /* ... Add more styles for mobile layout ... */
-}
 
 * {
     box-sizing: border-box;
@@ -787,10 +477,7 @@ button {
     color: rgb(164, 84, 23);
 }
 
-.confirmar-reserva p {
-    margin: 5%;
-    font-size: 30px;
-}
+
 
 .confirmar-reserva:hover {
     background-color: rgb(226, 222, 178);
@@ -1132,4 +819,359 @@ button {
 
 .logos-footer {
     margin: 2%;
+}
+
+/* Tablet (768px breakpoint) */
+@media only screen and (max-width: 768px) {
+    #pagina1 .encabezado {
+        /* Ajustes tablet para el header de la pagina de inicio */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+
+    #pagina2 .encabezado {
+        /* Ajustes tablet para el header de la pagina de inicio de sesión */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina3 .encabezado {
+        /* Ajustes tablet para el header de la pagina de registro de usuario */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina4 .encabezado {
+        /* Ajustes tablet para el header de la pagina de la carta */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina5 .encabezado {
+        /* Ajustes tablet para el header de la pagina de las hamburguesas */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina6 .encabezado {
+        /* Ajustes tablet para el header de la pagina de reserva */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina7 .encabezado {
+        /* Ajustes tablet para el header de la pagina de confirmación de reserva */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    
+    }
+    #pagina8 .encabezado {
+        /* Ajustes tablet para el header de la pagina de pedir */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina9 .encabezado {
+        /* Ajustes tablet para el header de la pagina de revisión del pedido */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina10 .encabezado {
+        /* Ajustes tablet para el header de la pagina de pago del pedido */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina11 .encabezado {
+        /* Ajustes tablet para el header de la pagina de confirmacion del pedido */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina12 .encabezado {
+        /* Ajustes tablet para el header de la pagina de seguimiento del pedido */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    nav ul {
+        /* Adjust the layout of the navigation list on tablet */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caja {
+        /* Adjust the margin and text alignment for the .caja section on tablets */
+        margin: 20px;
+        width: 100%;
+        height: 70%;
+    }
+
+    .titulo {
+        /* Adjust the font size for the .titulo heading on tablets */
+        display: none;
+    }
+    .formulario {
+        /* Adjust the margin and text alignment for the form on tablets */
+        margin: 20px;
+        text-align: center;
+    }
+
+    #acceder, #volver, #cerrar_sesion, #borrar_cuenta {
+        /* Adjust the font size and padding for the button on tablets */
+        font-size: 1.5em;
+        padding: 10px 20px;
+    }
+    #crearcuenta {
+        /* Adjust the font size and padding for the button on tablets */
+        font-size: 1.5em;
+        padding: 10px 20px;
+    }
+    .fotos {
+        /* Adjust the margin and layout for the .fotos div on tablets */
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto {
+        /* Adjust the width and height for the images on tablets */
+        max-width: 100%;
+        height: auto;
+    }
+
+    .texto-hamburguesas {
+        /* Adjust the font size for the .texto-hamburguesas heading on tablets */
+        font-size: 1.5em;
+    }
+    .galeria-pedido {
+        /* Adjust the layout for the .galeria-pedido div on tablets */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cuadrado {
+        /* Adjust the margin for the .cuadrado div on tablets */
+        margin: 20px;
+    }
+
+    .photo {
+        /* Adjust the width and height for the images on tablets */
+        width: 100%;
+        height: auto;
+    }
+
+    .boton-pideya {
+        /* Adjust the font size and padding for the .boton-pideya div on tablets */
+        font-size: 1.5em;
+        padding: 10px 20px;
+    }
+    #pagina6{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .cuadro-reservas {
+    /* Adjust the layout for the .cuadro-reservas div on tablets */
+    display: flex;
+    width: 100vw;
+    align-items: center; 
+    height: 80%; /* Make the div occupy the upper half of the viewport */
+    overflow: auto; /* Add scrollbars to the div */
+    }
+
+    .texto-reserva {
+        /* Adjust the margin for the .texto-reserva div on tablets */
+        margin: 20px;
+    }
+
+    .horas-reservas {
+        /* Adjust the layout for the .horas-reservas div on tablets */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boton-horas {
+        /* Adjust the font size and padding for the .boton-horas button on tablets */
+        font-size: 1.5em;
+        padding: 10px 20px;
+    }
+
+    .confirmar-reserva {
+        /* Adjust the font size and padding for the .confirmar-reserva div on tablets */
+        margin: 0px; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .confirmar-reserva p {
+        align-text: center;
+        font-size: large;
+    }
+
+    .telfs {
+        margin-top: none;
+    }
+    
+    .tel1 {
+        margin-top:none;
+    }
+    
+    .tel2 {
+        margin-top: none;
+    }
+    
+    .tel3 {
+        margin-top: none;
+    }
+
+    .confirmacion {
+        /* Adjust the layout for the .confirmacion div on tablets */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-confirmacion {
+        /* Adjust the margin and font size for the .texto-confirmacion div on tablets */
+        margin: 20px;
+        font-size: 1.5em;
+    }
+    .actions {
+        height: 25%;
+    }
+
+    .cuadro-pedido {
+        overflow: auto;
+        width: 100vw;
+    }
+
+    #pagina8 {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .boton-siguiente {
+        margin: 0px; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        /*Página que muestra las hamburguesas*/
+    .galeria-contenedor {
+        width: 100%; /*Queremos que el contenedor ocupe todo el ancho de la página*/
+
+        
+    }
+
+    .texto-grande, .texto-pequeño {
+        /* Adjust the font size for the .texto-grande and .texto-pequeño paragraphs on tablets */
+        font-size: 1.5em;
+    }
+
+    .actions {
+        /* Adjust the layout for the .actions div on tablets */
+        display: flex;
+        justify-content: space-around;
+    }
+    .confirmacion2 {
+        /* Adjust the layout for the .confirmacion2 div on tablets */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-confirmacion2 {
+        /* Adjust the margin and font size for the .texto-confirmacion2 div on tablets */
+        margin: 20px;
+        font-size: 1.5em;
+    }
+
+    .botones-pedido {
+        /* Adjust the layout for the .botones-pedido div on tablets */
+        display: flex;
+        justify-content: space-around;
+    }
+    .pag-pago {
+        /* Adjust the layout for the .pag-pago div on tablets */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .anterior,
+    .siguiente {
+        display: none; /* Hide the arrows on tablets */
+    }
+
+    .formulario1 {
+        /* Adjust the layout for the .formulario1 form on tablets */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botones-pedido2 {
+        /* Adjust the layout for the .botones-pedido2 div on tablets */
+        display: flex;
+        justify-content: space-around;
+    }
+    .confirmacion3 {
+        /* Adjust the layout for the .confirmacion3 div on tablets */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-confirmacion3 {
+        /* Adjust the margin and font size for the .texto-confirmacion3 div on tablets */
+        margin: 20px;
+        font-size: 1.5em;
+    }
+
+    .boton-seguimiento {
+        /* Adjust the layout for the .boton-seguimiento div on tablets */
+        display: flex;
+        justify-content: center;
+    }
+    .seguimiento-pedido {
+        /* Adjust the layout for the .seguimiento-pedido div on tablets */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fotos-seguimiento {
+        /* Adjust the layout for the .fotos-seguimiento div on tablets */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        /* Adjust the layout for the .footer div on tablets */
+        display: none;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+/* Mobile Styles (600px and below) */
+@media only screen and (max-width: 600px) {
+    .encabezado {
+        /* Adjust styles for the header on mobile phones */
+    }
+
+    nav ul {
+        /* Adjust styles for the navigation on mobile phones */
+    }
+
+    /* ... Add more styles for mobile layout ... */
 }
