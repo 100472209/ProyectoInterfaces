@@ -1085,15 +1085,21 @@ button {
     }
     .confirmacion2 {
         /* Adjust the layout for the .confirmacion2 div on tablets */
-        display: flex;
-        flex-direction: column;
         align-items: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #pagina9 h2 {
+        /* Adjust the layout for the .confirmacion2 div on tablets */
+        font-size: 1.5em;
+        margin-left: 10%;
     }
 
     .texto-confirmacion2 {
         /* Adjust the margin and font size for the .texto-confirmacion2 div on tablets */
-        margin: 20px;
-        font-size: 1.5em;
+        font-size: 0.5em;
     }
 
     .boton-pideya {
@@ -1117,13 +1123,5 @@ button {
 
 /* Mobile Styles (600px and below) */
 @media only screen and (max-width: 600px) {
-    .encabezado {
-        /* Adjust styles for the header on mobile phones */
-    }
 
-    nav ul {
-        /* Adjust styles for the navigation on mobile phones */
-    }
-
-    /* ... Add more styles for mobile layout ... */
 }
