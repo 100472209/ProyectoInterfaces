@@ -388,7 +388,7 @@ button {
 
 .boton-pideya a{
     text-decoration: none;
-    color: rgb(226, 222, 178);
+    color: black;
 }
 
 .boton-pideya:hover {
@@ -474,7 +474,7 @@ button {
 
 .confirmar-reserva a {
     text-decoration: none;
-    color: rgb(226, 222, 178);
+    color: black;
 }
 
 .confirmar-reserva a:hover {
@@ -579,7 +579,7 @@ button {
 
 .boton-siguiente a {
     text-decoration: none;
-    color: rgb(226, 222, 178);
+    color: black;
     font-weight: bold;
 }
 
@@ -750,7 +750,7 @@ button {
 
 .boton-seguimiento a {
     text-decoration: none;
-    color: rgb(226, 222, 178);
+    color: black;
 }
 
 .boton-seguimiento:hover {
