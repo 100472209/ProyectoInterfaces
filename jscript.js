@@ -162,43 +162,69 @@ function haySesionIniciada() {
     return getCookie("currentUser") !== null;  // Asumiendo que "currentUser" es la cookie de sesión
 }
 
+// Código para el carrito de la página web
+const hamburguesas = [
+    "BIT CRUNCHER",
+    "HACKER PICANTE",
+    "CAMARELIZED CODE BURGUER",
+    "BINARY BACON BLISS BURGUER",
+    "EGGCELENT CODE BURGUER",
+    "PIXELATED PEPPER BURGUER",
+    "RYBYTE OVERLOAD BURGUER"
+]
+// Diccionario con los datos de las hamburguesas
+let carrito = {
+    "BIT CRUNCHER": [0, 12.95],
+    "HACKER PICANTE": [0, 11.95],
+    "CAMARELIZED CODE BURGUER": [0, 9.95],
+    "BINARY BACON BLISS BURGUER": [0, 12.95],
+    "EGGCELENT CODE BURGUER": [0, 11.95],
+    "PIXELATED PEPPER BURGUER": [0, 13.95],
+    "RYBYTE OVERLOAD BURGUER": [0, 14.95]
+}
 
-// Script para el seguimiento
-document.addEventListener('DOMContentLoaded', function () {
-    const fotos = document.querySelectorAll('.foto-container');
-  
-    function iniciarCuentaAtras(cuentaAtras, tiempo) {
-      cuentaAtras.innerText = tiempo;
-  
-      let tiempoRestante = tiempo;
-      const interval = setInterval(() => {
-        tiempoRestante--;
-        cuentaAtras.innerText = tiempoRestante;
-  
-        if (tiempoRestante <= 0) {
-          clearInterval(interval);
-          cuentaAtras.innerText = '';
+botonesMas = document.querySelectorAll(".plus")
+botonesMenos = document.querySelectorAll(".minus")
+contadorCantidad = document.querySelectorAll(".count")
+
+// Cambiamos el valor de los contadores para que muestren el de las cookies
+contadorCantidad.forEach((el, index) => {
+    let hamburguesa = hamburguesas[index];
+    el.textContent = carrito[hamburguesa][0];
+})
+
+botonesMas.forEach((button, index) => {
+    let hamburguesa = hamburguesas[index];
+    button.addEventListener("click", () => {
+        // Le sumamos al contador 1 
+        contadorCantidad[index].textContent = ++carrito[hamburguesa][0];
+        total_productos();
+    });
+});
+
+botonesMenos.forEach((button, index) => {
+    let hamburguesa = hamburguesas[index];
+    button.addEventListener("click", () => {
+        // Si el contador es mayor que cero le restamos 1 
+        if (carrito[hamburguesa][0] > 0){
+            contadorCantidad[index].textContent = --carrito[hamburguesa][0];
+        } 
+        total_productos();
+    });
+});
+
+function total_productos() {
+    let texto_hamb = "";
+    let hamb_etiq = document.getElementById("productos-elegidos");
+    let texto_total = document.getElementById("total-pago");
+    let total = 0;
+    hamburguesas.forEach((hamburguesa) => {
+        total += carrito[hamburguesa][1] * carrito[hamburguesa][0];
+        if (carrito[hamburguesa][0] > 0) {
+            texto_hamb += carrito[hamburguesa][0] + " X "+ hamburguesa + "\n"; 
         }
-      }, 1000);
-    }
-  
-    function mostrarSiguienteFoto(index) {
-      if (index < fotos.length) {
-        const cuentaAtras = fotos[index].querySelector('.cuenta-atras');
-  
-        // Verifica si la página está visible antes de iniciar la cuenta atrás
-        if (!document.hidden) {
-          fotos[index].style.display = 'block';
-          iniciarCuentaAtras(cuentaAtras, 10);
-  
-          setTimeout(() => {
-            fotos[index].style.display = 'none';
-            mostrarSiguienteFoto(index + 1);
-          }, 10000);
-        }
-      }
-    }
-  
-    // Inicia el proceso
-    mostrarSiguienteFoto(0);
-  });
+    });
+    console.log(total);
+    texto_total.textContent = total.toFixed(2) + "€";
+    hamb_etiq.innerHTML = texto_hamb.replace(/\n/g, "<br>");
+}
