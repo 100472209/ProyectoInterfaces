@@ -919,11 +919,7 @@ button {
         /* Adjust the font size for the .titulo heading on tablets */
         display: none;
     }
-    .formulario {
-        /* Adjust the margin and text alignment for the form on tablets */
-        margin: 20px;
-        text-align: center;
-    }
+
 
     #acceder, #volver, #cerrar_sesion, #borrar_cuenta {
         /* Adjust the font size and padding for the button on tablets */
@@ -953,28 +949,14 @@ button {
         /* Adjust the font size for the .texto-hamburguesas heading on tablets */
         font-size: 1.5em;
     }
-    .galeria-pedido {
-        /* Adjust the layout for the .galeria-pedido div on tablets */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .cuadrado {
-        /* Adjust the margin for the .cuadrado div on tablets */
-        margin: 20px;
-    }
-
-    .photo {
-        /* Adjust the width and height for the images on tablets */
-        width: 100%;
-        height: auto;
-    }
 
     .boton-pideya {
         /* Adjust the font size and padding for the .boton-pideya div on tablets */
         font-size: 1.5em;
         padding: 10px 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
     #pagina6{
         flex-wrap: wrap;
@@ -987,18 +969,6 @@ button {
     align-items: center; 
     height: 80%; /* Make the div occupy the upper half of the viewport */
     overflow: auto; /* Add scrollbars to the div */
-    }
-
-    .texto-reserva {
-        /* Adjust the margin for the .texto-reserva div on tablets */
-        margin: 20px;
-    }
-
-    .horas-reservas {
-        /* Adjust the layout for the .horas-reservas div on tablets */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .boton-horas {
@@ -1061,7 +1031,6 @@ button {
     }
 
     .boton-siguiente {
-        margin: 0px; 
         margin-left: auto;
         margin-right: auto;
     }
@@ -1082,15 +1051,22 @@ button {
         display: flex;
         justify-content: space-around;
     }
+    .confirmacion{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .confirmacion h2{
+        font-size: 3.5em;
+        margin-right: auto;
+        margin-left: auto;
+    }
     .confirmacion2 {
         /* Adjust the layout for the .confirmacion2 div on tablets */
-        align-items: center;
-        display: block;
         margin-left: auto;
         margin-right: auto;
     }
 
-    #pagina9 h2 {
+    .confirmacion2 h2 {
         /* Adjust the layout for the .confirmacion2 div on tablets */
         font-size: 1.5em;
         margin-left: 10%;
@@ -1101,9 +1077,33 @@ button {
         font-size: 0.5em;
     }
 
-    .boton-pideya {
+    .confirmacion3{
+        
         margin-right: auto;
         margin-left: auto;
+    }
+    .confirmacion3 h2{
+        font-size: 3.5em;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .texto-confirmacion3 {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #pagina11{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .boton-seguimiento {
+        /* Adjust the font size and padding for the .boton-seguimiento div on tablets */
+        height: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
     }
 
     .anterior,
