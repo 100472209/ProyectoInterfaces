@@ -601,7 +601,7 @@ button {
     background-color: rgb(164, 84, 23);
     font-size: 40px;
     margin-left: 80%;
-    padding: 0.5%;
+    padding: 0.1%;
     text-align: center;
     border-radius: 1vw;
     border: 1px solid rgb(226, 222, 178);
@@ -683,7 +683,7 @@ button {
     background-color: rgb(164, 84, 23);
     color: rgb(226, 222, 178);
     margin: 2%;
-    margin-top: 37.5%;
+    margin-top: 36.5%;
     margin-left: 10%;
     margin-bottom: 5%;
     width: 20%;
@@ -695,7 +695,7 @@ button {
 
 .confirmar-reserva a {
     text-decoration: none;
-    color: rgb(226, 222, 178);
+    color: black;
 }
 
 .confirmar-reserva a:hover {
@@ -795,7 +795,7 @@ button {
     padding: 1%;
     padding-left: 2%;
     padding-right: 2%;
-    margin-top: 39%;
+    margin-top: 38%;
     margin-bottom: 5.5%;
     border-radius: 1vw;
     border: 1px solid rgb(226, 222, 178);
@@ -803,7 +803,7 @@ button {
 
 .boton-siguiente a {
     text-decoration: none;
-    color: rgb(226, 222, 178);
+    color: black;
     font-weight: bold;
 }
 
@@ -964,7 +964,7 @@ button {
     padding: 1%;
     padding-left: 2%;
     padding-right: 2%;
-    margin-top: 39%;
+    margin-top: 38%;
     margin-bottom: 6%;
     margin-left: 30%;
     border: 1px solid rgb(226, 222, 178);  
@@ -974,7 +974,7 @@ button {
 
 .boton-seguimiento a {
     text-decoration: none;
-    color: rgb(226, 222, 178);
+    color: black;
 }
 
 .boton-seguimiento:hover {
