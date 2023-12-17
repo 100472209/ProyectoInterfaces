@@ -156,10 +156,10 @@ document.getElementById("crearcuenta").onclick = registerUser;
 document.getElementById("acceder").onclick = loginUser;
 
 function goToSeccion(sectionId, requiereSesion = false) {
-    if (requiereSesion && !haySesionIniciada()) {
-        alert("Debes iniciar sesión para acceder a esta sección.");
-        return;
-    }
+    //if (requiereSesion && !haySesionIniciada()) {
+        //alert("Debes iniciar sesión para acceder a esta sección.");
+        //return;
+    //}
 
     document.querySelectorAll('.section').forEach(function(section) {
         section.style.display = 'none';
@@ -319,3 +319,44 @@ function confirmarReserva() {
         alert("Por favor, selecciona una hora para tu reserva.");
     }
 }
+
+// Script para seguimiento 
+document.addEventListener('DOMContentLoaded', function () {
+    const fotos = document.querySelectorAll('.foto-container');
+  
+    function iniciarCuentaAtras(cuentaAtras, tiempo) {
+      cuentaAtras.innerText = tiempo;
+  
+      let tiempoRestante = tiempo;
+      const interval = setInterval(() => {
+        tiempoRestante--;
+        cuentaAtras.innerText = tiempoRestante;
+  
+        if (tiempoRestante <= 0) {
+          clearInterval(interval);
+          cuentaAtras.innerText = '';
+        }
+      }, 1000);
+    }
+  
+    function mostrarSiguienteFoto(index) {
+      if (index < fotos.length) {
+        const cuentaAtras = fotos[index].querySelector('.cuenta-atras');
+  
+        // Verifica si la página está visible antes de iniciar la cuenta atrás
+        if (!document.hidden) {
+          fotos[index].style.display = 'block';
+          iniciarCuentaAtras(cuentaAtras, 10);
+  
+          setTimeout(() => {
+            fotos[index].style.display = 'none';
+            mostrarSiguienteFoto(index + 1);
+          }, 10000);
+        }
+      }
+    }
+  
+    // Inicia el proceso
+    mostrarSiguienteFoto(0);
+  });
+  
