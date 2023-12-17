@@ -5,17 +5,87 @@ html, body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-image: url(img/fondo.png);
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 /* Tablet (768px breakpoint) */
 @media only screen and (max-width: 768px) {
     #pagina1 .encabezado {
-        /* Adjust the padding and font size for the header on tablets */
+        /* Ajustes tablet para el header de la pagina de inicio */
         display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
         padding: 10px;
         font-size: 1.2em;
     }
 
+    #pagina2 .encabezado {
+        /* Ajustes tablet para el header de la pagina de inicio de sesión */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina3 .encabezado {
+        /* Ajustes tablet para el header de la pagina de registro de usuario */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina4 .encabezado {
+        /* Ajustes tablet para el header de la pagina de la carta */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina5 .encabezado {
+        /* Ajustes tablet para el header de la pagina de las hamburguesas */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina6 .encabezado {
+        /* Ajustes tablet para el header de la pagina de reserva */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina7 .encabezado {
+        /* Ajustes tablet para el header de la pagina de confirmación de reserva */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    
+    }
+    #pagina8 .encabezado {
+        /* Ajustes tablet para el header de la pagina de pedir */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina9 .encabezado {
+        /* Ajustes tablet para el header de la pagina de revisión del pedido */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina10 .encabezado {
+        /* Ajustes tablet para el header de la pagina de pago del pedido */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina11 .encabezado {
+        /* Ajustes tablet para el header de la pagina de confirmacion del pedido */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    #pagina12 .encabezado {
+        /* Ajustes tablet para el header de la pagina de seguimiento del pedido */
+        display: none; /* Esconder el header en tablets, pero buscar manera para q solo se quede en la del inicio*/
+        padding: 10px;
+        font-size: 1.2em;
+    }
     nav ul {
         /* Adjust the layout of the navigation list on tablet */
         display: flex;
@@ -27,12 +97,7 @@ html, body {
         /* Adjust the margin and text alignment for the .caja section on tablets */
         margin: 20px;
         width: 100%;
-        height: 30%;
-    }
-
-    .caja p {
-        /* Adjust the font size for the .caja paragraph on tablets */
-        display: none;
+        height: 70%;
     }
 
     .titulo {
@@ -97,11 +162,14 @@ html, body {
         padding: 10px 20px;
     }
     .cuadro-reservas {
-        /* Adjust the layout for the .cuadro-reservas div on tablets */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    /* Adjust the layout for the .cuadro-reservas div on tablets */
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    align-items: center;
+    height: 80%; /* Make the div occupy the upper half of the viewport */
+    overflow: auto; /* Add a scrollbar if the content overflows */
+}
 
     .texto-reserva {
         /* Adjust the margin for the .texto-reserva div on tablets */
@@ -123,8 +191,9 @@ html, body {
 
     .confirmar-reserva {
         /* Adjust the font size and padding for the .confirmar-reserva div on tablets */
-        font-size: 1.5em;
-        padding: 10px 20px;
+        height:20% ;
+        width: 50%;
+        font-size: x-small;
     }
     .confirmacion {
         /* Adjust the layout for the .confirmacion div on tablets */
@@ -143,6 +212,13 @@ html, body {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+        /*Página que muestra las hamburguesas*/
+    .galeria-contenedor {
+        width: 100%; /*Queremos que el contenedor ocupe todo el ancho de la página*/
+
+        
     }
 
     .texto-grande, .texto-pequeño {
@@ -178,6 +254,11 @@ html, body {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .anterior,
+    .siguiente {
+        display: none; /* Hide the arrows on tablets */
     }
 
     .formulario1 {
@@ -226,7 +307,7 @@ html, body {
 
     .footer {
         /* Adjust the layout for the .footer div on tablets */
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
 
@@ -414,6 +495,8 @@ nav a.inicio:hover, a.resto:hover, a.enlace-pedido:hover, a.enlace-reserva:hover
 /*Página de inicio de sesión*/
 /*Estilo de los formularios de acceso a la cuenta y registro*/
 .formulario {
+    display: flex;
+    flex-direction: column;
     width: 70%; 
     text-align: center;
     background-color: rgb(164, 84, 23, 0.5);
@@ -464,6 +547,27 @@ input {
 label {
     font-size: 15px;
     color: rgb(226, 222, 178);
+}
+
+#tus-reservas{
+    display: none;
+}
+
+
+.label-reservas {
+    background-color: rgb(164, 84, 23, 0.5);
+    color: white;
+    border: 1px solid rgb(226, 222, 178);
+    font-size: 2vh;
+    margin-top: 1vh;
+    margin-left: 2%;
+}
+
+.texto-reservas {
+    color: white;
+    font-size: 2vh;
+    margin-top: 1vh;
+    margin-left: 2%;
 }
 
 button {
@@ -658,7 +762,7 @@ button {
     margin-bottom: 18%;
 }
 
-.boton-horas:hover {
+.boton-horas:hover, .boton-horas.seleccionado {
     background-color: rgb(226, 222, 178);
     color: rgb(164, 84, 23);
 }
