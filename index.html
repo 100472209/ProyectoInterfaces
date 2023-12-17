@@ -62,7 +62,13 @@
             <button type="button" id="acceder">ACCEDER</button><br>
             <div class = "reg"><a href="javascript:void(0);" onclick="goToSeccion('pagina3', false)">¿Aún no somos bitfriends?</a></div>
             <div class = "reg"><a href="javascript:void(0);" onclick="goToSeccion('pagina3', false)">REGÍSTRATE</a></div>
+
         </form>
+        <div class="tus-reservas", id="tus-reservas">
+            <label class="label-reservas">TUS RESERVAS:
+                <p class="texto-reservas">-</p>
+            </label>
+        </div>
     </div>
 
     <!--Página registro-->
@@ -196,54 +202,54 @@
                 </nav>
             </header></div>
         <div class="cuadro-reservas">
+        <div>
+            <div class="texto-reserva">
+            <p>Avenida Mar Mediterráneo, 20, Leganés</p>
+            <div><img src="img/rest1.png" class="foto-rest" width="129" height="98"></div>
+            </div>
+            <div class="texto-reserva">
+            <p>C.C. ParqueSur, Leganés</p>
+            <div><img src="img/rest2.png" class="foto-rest"  width="129" height="98"></div>
+            </div>
+            <div class="texto-reserva">
+            <p>Gran Vía, 40, Madrid</p>
+            <div><img src="img/rest3.png" class="foto-rest" width="129" height="98"></div>
+            </div>
+        </div>  
+        <div class="telfs">
             <div>
-                <div class="texto-reserva">
-                <p>Avenida Mar Mediterráneo, 20, Leganés</p>
-                <div><img src="img/rest1.png" class="foto-rest" width="129" height="98"></div>
-                </div>
-                <div class="texto-reserva">
-                <p>C.C. ParqueSur, Leganés</p>
-                <div><img src="img/rest2.png" class="foto-rest" width="129" height="98"></div>
-                </div>
-                <div class="texto-reserva">
-                <p>Gran Vía, 40, Madrid</p>
-                <div><img src="img/rest3.png" class="foto-rest" width="129" height="98"></div>
-                </div>
-            </div>  
-            <div class="telfs">
-                <div>
-                    <img src="img/telefono.png" class="tel1" width="20" height="20">
-                    <a>916 534 890</a></div>
-                    <p>28034</p>
-                    <p>Estamos abiertos a partir de las 12:30<br>¡Contáctanos!</p>
-                <div>
-                    <img src="img/telefono.png" class="tel2" width="20" height="20">
-                    <a>913 585 360</a></div>
-                    <p>28123</p>
-                    <p>Estamos abiertos a partir de las 12:45<br>¡Contáctanos!</p>
-                <div>
-                    <img src="img/telefono.png" class="tel3" width="20" height="20">
-                    <a>914 968 544</a></div>
-                    <p>28304</p>
-                    <p>Estamos abiertos a partir de las 12:30<br>¡Contáctanos!</p>
-            </div>      
-            <div class="horas-reservas">
-                <div class="horas">
-                    <button class="boton-horas">13:00</button>
-                    <button class="boton-horas">13:30</button>
-                    <button class="boton-horas">14:00</button></div>
-                <div class="horas">
-                    <button class="boton-horas">13:00</button>
-                    <button class="boton-horas">13:30</button>
-                    <button class="boton-horas">14:00</button></div>
-                <div class="horas">
-                    <button class="boton-horas">13:00</button>
-                    <button class="boton-horas">13:30</button>
-                    <button class="boton-horas">14:00</button></div>
-            </div>     
+                <img src="img/telefono.png" class="tel1" width="20" height="20">
+                <a>916 534 890</a></div>
+                <p>28034</p>
+                <p>Estamos abiertos a partir de las 12:30<br>¡Contáctanos!</p>
+            <div>
+                <img src="img/telefono.png" class="tel2" width="20" height="20">
+                <a>913 585 360</a></div>
+                <p>28123</p>
+                <p>Estamos abiertos a partir de las 12:45<br>¡Contáctanos!</p>
+            <div>
+                <img src="img/telefono.png" class="tel3" width="20" height="20">
+                <a>914 968 544</a></div>
+                <p>28304</p>
+                <p>Estamos abiertos a partir de las 12:30<br>¡Contáctanos!</p>
+        </div>      
+        <div class="horas-reservas">
+            <div class="horas">
+                <button class="boton-horas" id = "Avenida Del Mediterraneo">13:00</button>
+                <button class="boton-horas" id = "Avenida Del Mediterraneo2">13:30</button>
+                <button class="boton-horas" id="Avenida Del Mediterraneo3">14:00</button></div>
+            <div class="horas">
+                <button class="boton-horas" id = "ParqueSur">13:00</button>
+                <button class="boton-horas" id = "ParqueSur2">13:30</button>
+                <button class="boton-horas" id = "ParqueSur3">14:00</button></div>
+            <div class="horas">
+                <button class="boton-horas" id = "Gran Vía">13:00</button>
+                <button class="boton-horas" id = "Gran Vía 2">13:30</button>
+                <button class="boton-horas" id = "Gran Vía 3">14:00</button></div>
+        </div>     
         </div>
         <div class="confirmar-reserva">
-            <a href="javascript:void(0);" onclick="goToSeccion('pagina7', false)"><p>CONFIRMAR RESERVA</p></a>
+            <a href="javascript:void(0);" id = "boton-conf"><p>CONFIRMAR RESERVA</p></a>
         </div>
     </div>
 
@@ -473,19 +479,17 @@
         <div class="seguimiento-pedido">
             <h2>SEGUIMIENTO DEL PEDIDO</h2>
             <div class="fotos-seguimiento">
-              <div class="foto-container">
-                <img src="img/seguimiento1.png" class="foto-seg" width="280" height="266">
-                <div class="texto-seguimiento"><a>EN COCINA</a></div>
-                <div class="cuenta-atras"></div>
-              </div>
-              <div class="foto-container">
-                <img src="img/seguimiento2.png" class="foto-seg" width="280" height="266">
-                <div class="texto-seguimiento"><a>EN REPARTO</a></div>
-                <div class="cuenta-atras"></div>
-              </div>
-              <div class="foto-container">
-                <img src="img/seguimiento3.png" class="foto-seg" width="280" height="266">
-                <div class="texto-seguimiento"><a>ENTREGADO</a></div>
+                <div>
+                    <img src="img/seguimiento1.png" class="foto-seg1" width="280" height="266">
+                    <div class="texto-seguimiento"><a>EN COCINA</a></div>
+                </div>
+                <div>
+                    <img src="img/seguimiento2.png" class="foto-seg2" widht="280" height="266">
+                    <div class="texto-seguimiento"><a>EN REPARTO</a></div>
+                </div>
+                <div>
+                    <img src="img/seguimiento3.png" class="foto-seg3" width="280" height="266">
+                    <div class="texto-seguimiento3"><a>ENTREGADO</a></div>
                 </div>
             </div>
         </div>
