@@ -18,18 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    var botonMenu = document.querySelector('.menu-icon');
-    var menuMovil = document.querySelector('.mobile-menu');
 
-    botonMenu.addEventListener('click', function() {
-        // Alternar la visibilidad del menú cada vez que se hace clic en el botón
-        if (menuMovil.style.display === 'flex') {
-            menuMovil.style.display = 'none';
-        } else {
-            menuMovil.style.display = 'flex';
-            menuMovil.style.flexDirection = 'column';
-        }
-    });
 });
 
 
