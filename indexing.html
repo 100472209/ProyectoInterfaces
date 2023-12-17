@@ -7,31 +7,31 @@
         <title>Byteburgers</title>
     </head>
 <body>
-    <header class="encabezado">
-        <nav>
-            <ul>
-                <li><a class="bb">BB</a></li>
-                <li><a href="#pagina1" class="inicio">HOME</a></li>
-                <li><a href="#pagina4" class="resto">MENU</a></li>
-                <li><a href="#pagina6" class="resto">RESERVE</a></li>
-                <li><a href="#pagina8" class="resto">ORDER NOW</a></li>
-                <div class="user">
-                    <img src="img/user.png" class="foto-user" width="32" height="32">
-                    <a href="#pagina2">Log in</a>
-                </div>
-            </ul>
-        </nav>
-    </header>
     <!--Página principal-->
-    <div class="page" id="pagina1">
-        
+    <div class="page section" id="pagina1">
+        <div>
+        <header class="encabezado">
+            <nav>
+                <ul>
+                    <li><a class="bb">BB</a></li>
+                    <li><a href="javascript:void(0);" onclick="goToSeccion('pagina1', false)" class="inicio">HOME</a></li>
+                    <li><a href="javascript:void(0);" onclick="goToSeccion('pagina4', false)" class="resto">MENU</a></li>
+                    <li><a href="javascript:void(0);" onclick="goToSeccion('pagina6', true)" class="enlace-reserva">RESERVE</a></li>
+                    <li><a href = "javascript:void(0);" onclick="goToSeccion('pagina8', true)" class="enlace-pedido">ORDER</a></li>
+                    <div class="user">
+                        <img src="img/user.png" class="foto-user" width="32" height="32">
+                        <a href="javascript:void(0);" onclick="goToSeccion('pagina2')" >Log In</a>
+                    </div>
+                </ul>
+            </nav>
+        </header></div>
         <section class="caja">
-            <p>¿WHAT BURGER DO<br>YOU FEEL LIKE TODAY?</p>
-            <a  class="pide" href="#pagina8">ORDER NOW</a>
+            <p>¿WHAT BURGER DO<br>YOU FEEL TODAY?</p>
+            <a  class="pide" href = "javascript:void(0);" onclick="goToSeccion('pagina8', true)" >ORDER</a>
             <div class="idioma">
-                <a>Select your language:<br></a>
-                <a href="index.html" class="bandera"><img src="img/banderaesp.png" width="25" height="25"> SPANISH<br></a>
-                <a href="#pagina1" class="bandera"><img src="img/banderaingl.png" width="25" height="25"> ENGLISH</a>
+                <a>Select your language<br></a>
+                <a href="index.html" class="bandera"><img src="img/banderaesp.png" width="25" height="25">SPANISH<br></a>
+                <a href="javascript:void(0);" onclick="goToSeccion('pagina1')" class="bandera"><img src="img/banderaingl.png" width="25" height="25">ENGLISH</a>
             </div>
         </section>
         <h1 class="titulo">Byteburgers</h1>
