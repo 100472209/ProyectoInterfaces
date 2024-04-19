@@ -1,32 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.boton-horas').forEach(function(boton) {
-        boton.addEventListener('click', function() {
-            // Verificar si este botón ya está seleccionado
-            if (boton.classList.contains('seleccionado')) {
-                // Si ya está seleccionado, simplemente quitar la selección
-                boton.classList.remove('seleccionado');
-            } else {
-                // Comprobar si ya hay algún botón seleccionado
-                const seleccionado = document.querySelector('.boton-horas.seleccionado');
-                if (seleccionado) {
-                    // Si ya hay un botón seleccionado, mostrar una alerta y no permitir una nueva selección
-                    alert('No puedes seleccionar más de una hora. Por favor, deselecciona la hora actual para elegir una diferente.');
-                } else {
-                    // Si no hay otro botón seleccionado, permitir la selección de este botón
-                    boton.classList.add('seleccionado');
-                }
-            }
-        });
-    });
 
-});
-
-
-
-
-var Boton = document.getElementById('boton-conf');
-Boton.addEventListener('click', confirmarReserva);
-Boton.addEventListener('click', function (){goToSeccion('pagina7', false);});
 
 let indiceCuadradoActual = 0;
 const cuadradosPorPagina = 3;
@@ -114,14 +86,12 @@ function loginUser() {
         document.querySelectorAll('.encabezado .user a').forEach(function(element) {
             element.textContent = user.nombre;
         });
-        // Reemplazar el contenido del formulario con los botones de cerrar sesión volver al inicio y las reservas
-
+        // Reemplazar el contenido del formulario con los botones de cerrar sesión y volver al inicio
         var formSection = document.getElementById("pagina2").querySelector(".formulario");
         formSection.innerHTML = `
             <button id = "cerrar_sesion" onclick="logoutUser()">Cerrar sesión</button>
             <button id = "borrar-cuenta" onclick="borrarCuenta()">Borrar cuenta</button>
         `;
-        crearLabelReservas(user.email);
     } else {
         alert("Credenciales incorrectas.");
     }
@@ -138,13 +108,6 @@ function logoutUser() {
 
     // Restaurar el contenido original de la sección de inicio de sesión
     // Restaurar el contenido original del formulario
-    var reservasLabel = document.getElementById("reservas-usuario");
-    if (reservasLabel) {
-        reservasLabel.parentNode.removeChild(reservasLabel);
-    }
-    var reservasDiv = document.getElementById("tus-reservas");
-    reservasDiv.style.display = "none";
-
     var formSection = document.getElementById("pagina2").querySelector(".formulario");
     formSection.innerHTML = `
         <h2>Accede a tu cuenta</h2>
@@ -159,7 +122,7 @@ function logoutUser() {
 document.getElementById("crearcuenta").onclick = registerUser;
 document.getElementById("acceder").onclick = loginUser;
 
-function goToSeccion(sectionId, requiereSesion) {
+function goToSeccion(sectionId, requiereSesion = false) {
     if (requiereSesion && !haySesionIniciada()) {
         alert("Debes iniciar sesión para acceder a esta sección.");
         return;
@@ -265,103 +228,3 @@ function total_productos() {
     texto_total.textContent = total.toFixed(2) + "€";
     hamb_etiq.innerHTML = texto_hamb.replace(/\n/g, "<br>");
 }
-
-function crearLabelReservas(emailUsuario) {
-    var reservas = JSON.parse(getCookie("reservas") || "[]");
-    var reservasUsuario = reservas.filter(function(reserva) { return reserva.usuario === emailUsuario; });
-
-    var reservasDiv = document.getElementById("tus-reservas");
-    var textoReservas = reservasDiv.querySelector(".texto-reservas");
-
-    if (reservasUsuario.length === 0) {
-        textoReservas.innerHTML = "Todavía no has hecho reservas";
-    } else {
-        var reservasHTML = "Tus reservas:<br>";
-        reservasUsuario.forEach(function(reserva, index) {
-            reservasHTML += `${reserva.hora} en ${reserva.restaurante} 
-            <button onclick="borrarReserva(${index}, '${emailUsuario}')">Borrar</button><br>`;
-        });
-        textoReservas.innerHTML = reservasHTML;
-    }
-
-    reservasDiv.style.display = "flex"; // Mostrar el div
-}
-
-
-function borrarReserva(indiceReserva, emailUsuario) {
-    var reservas = JSON.parse(getCookie("reservas") || "[]");
-    var reservasUsuario = reservas.filter(function(reserva) { return reserva.usuario === emailUsuario; });
-
-    if (indiceReserva < reservasUsuario.length) {
-        // Eliminar la reserva del array
-        var reservaAEliminar = reservasUsuario[indiceReserva];
-        reservas = reservas.filter(function(reserva) {
-            return !(reserva.usuario === reservaAEliminar.usuario && reserva.fecha === reservaAEliminar.fecha && reserva.hora === reservaAEliminar.hora);
-        });
-
-        // Actualizar las cookies
-        setCookie("reservas", JSON.stringify(reservas), 7);
-
-        // Actualizar el label de reservas
-        crearLabelReservas(emailUsuario);
-    }
-}
-
-function confirmarReserva() {
-    var botonSeleccionado = document.querySelector('.boton-horas.seleccionado');
-    if (botonSeleccionado) {
-        var horaReserva = botonSeleccionado.textContent;
-        var idRestaurante = botonSeleccionado.id;
-        var usuario = getCookie("currentUser");
-
-        var reservas = JSON.parse(getCookie("reservas") || "[]");
-        reservas.push({ usuario: usuario, restaurante: idRestaurante, hora: horaReserva });
-        setCookie("reservas", JSON.stringify(reservas), 7);
-        crearLabelReservas(usuario);
-        // Lógica para ir a la pantalla de confirmación o mostrar mensaje
-    } else {
-        alert("Por favor, selecciona una hora para tu reserva.");
-    }
-}
-
-
-// Script para seguimiento 
-document.addEventListener('DOMContentLoaded', function () {
-    const fotos = document.querySelectorAll('.foto-container');
-  
-    function iniciarCuentaAtras(cuentaAtras, tiempo) {
-      cuentaAtras.innerText = tiempo;
-  
-      let tiempoRestante = tiempo;
-      const interval = setInterval(() => {
-        tiempoRestante--;
-        cuentaAtras.innerText = tiempoRestante;
-  
-        if (tiempoRestante <= 0) {
-          clearInterval(interval);
-          cuentaAtras.innerText = '';
-        }
-      }, 1000);
-    }
-  
-    function mostrarSiguienteFoto(index) {
-      if (index < fotos.length) {
-        const cuentaAtras = fotos[index].querySelector('.cuenta-atras');
-  
-        //  Verifica si la página está visible antes de iniciar la cuenta atrás
-        if (!document.hidden) {
-          fotos[index].style.display = 'block';
-          iniciarCuentaAtras(cuentaAtras, 10);
-  
-          setTimeout(() => {
-            fotos[index].style.display = 'none';
-            mostrarSiguienteFoto(index + 1);
-          }, 10000);
-        }
-      }
-    }
-  
-    // Inicio del proceso
-    mostrarSiguienteFoto(0);
-  });
-  

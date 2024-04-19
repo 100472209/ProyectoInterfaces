@@ -4,54 +4,53 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style1.css">
-        <script src="jscript.js"></script>
         <title>Byteburgers</title>
     </head>
 <body>
+    <header class="encabezado">
+        <nav>
+            <ul>
+                <li><a class="bb">BB</a></li>
+                <li><a href="#pagina1" class="inicio">HOME</a></li>
+                <li><a href="#pagina4" class="resto">MENU</a></li>
+                <li><a href="#pagina6" class="resto">RESERVE</a></li>
+                <li><a href="#pagina8" class="resto">ORDER NOW</a></li>
+                <div class="user">
+                    <img src="img/user.png" class="foto-user" width="32" height="32">
+                    <a href="#pagina2">Log in</a>
+                </div>
+            </ul>
+        </nav>
+    </header>
     <!--Página principal-->
-    <div class="page section" id="page1">
-        <div>
-        <header class="encabezado">
-            <nav>
-                <ul>
-                    <li><a class="bb">BB</a></li>
-                    <li><a href="javascript:void(0);" onclick="goToSeccion('page1', false)" class="inicio">HOME</a></li>
-                    <li><a href="javascript:void(0);" onclick="goToSeccion('page4', false)" class="resto">MENU</a></li>
-                    <li><a href="javascript:void(0);" onclick="goToSeccion('page6', true)" class="enlace-reserva">RESERVE</a></li>
-                    <li><a href = "javascript:void(0);" onclick="goToSeccion('page8', true)" class="enlace-pedido">ORDER</a></li>
-                    <div class="user">
-                        <img src="img/user.png" class="foto-user" width="32" height="32">
-                        <a href="javascript:void(0);" onclick="goToSeccion('pagina2')" >Log In</a>
-                    </div>
-                </ul>
-            </nav>
-        </header></div>
+    <div class="page" id="pagina1">
+        
         <section class="caja">
-            <p>¿WHAT BURGER DO<br>YOU FEEL TODAY?</p>
-            <a  class="pide" href = "javascript:void(0);" onclick="goToSeccion('pagina8', true)" >ORDER</a>
+            <p>¿WHAT BURGER DO<br>YOU FEEL LIKE TODAY?</p>
+            <a  class="pide" href="#pagina8">ORDER NOW</a>
             <div class="idioma">
-                <a>Select your language<br></a>
-                <a href="index.html" class="bandera"><img src="img/banderaesp.png" width="25" height="25">SPANISH<br></a>
-                <a href="javascript:void(0);" onclick="goToSeccion('pagina1')" class="bandera"><img src="img/banderaingl.png" width="25" height="25">ENGLISH</a>
+                <a>Select your language:<br></a>
+                <a href="index.html" class="bandera"><img src="img/banderaesp.png" width="25" height="25"> SPANISH<br></a>
+                <a href="#pagina1" class="bandera"><img src="img/banderaingl.png" width="25" height="25"> ENGLISH</a>
             </div>
         </section>
         <h1 class="titulo">Byteburgers</h1>
     </div>
 
     <!--Página inicio sesión-->
-    <div class="page" id="page2">
+    <div class="page" id="pagina2">
         <div>
             <header class="encabezado">
                 <nav>
                     <ul>
                         <li><a class="bb">BB</a></li>
-                        <li><a href="javascript:void(0);" onclick="goToSeccion('page1', false)" class="inicio">HOME</a></li>
-                        <li><a href="javascript:void(0);" onclick="goToSeccion('page4', false)" class="resto">MENU</a></li>
-                        <li><a href="javascript:void(0);" onclick="goToSeccion('page6', true)" class="enlace-reserva">RESERVE</a></li>
-                        <li><a href = "javascript:void(0);" onclick="goToSeccion('page8', true)" class="enlace-pedido">ORDER</a></li>
+                        <li><a href="#pagina1" class="inicio">HOME</a></li>
+                        <li><a href="#pagina4" class="resto">MENU</a></li>
+                        <li><a href="#pagina6" class="resto">RESERVE</a></li>
+                        <li><a href="#pagina8" class="resto">ORDER NOW</a></li>
                         <div class="user">
                             <img src="img/user.png" class="foto-user" width="32" height="32">
-                            <a href="javascript:void(0);" onclick="goToSeccion('pagina2')" >Log In</a>
+                            <a href="#pagina2">Log in</a>
                         </div>
                     </ul>
                 </nav>
@@ -67,7 +66,7 @@
     </div>
 
     <!--Página registro-->
-    <div class="page" id="page3">
+    <div class="page" id="pagina3">
         <form class="formulario" id="formulario2"> 
             <h2>Sign Up</h2>
             <input type="nombre" id="nombre" placeholder="Name" required><br>
@@ -80,7 +79,7 @@
     </div>
 
     <!--Página carta-->
-    <div class="page1" id="page4">
+    <div class="page1" id="pagina4">
         <div class="fotos">
             <a href="#pagina5"><img src="img/hamburguesas.png" alt="hamburguesas" width="470" height="366" class="foto">
             <h2 class="texto-hamburguesas">OUR BURGERS</h2></a>
@@ -96,7 +95,7 @@
     </div>
 
     <!--Página hamburguesas-->
-    <div class="page1" id="page5">
+    <div class="page1" id="pagina5">
         <div class="galeria-contenedor">
         <div class="galeria-pedido">
             <div class="cuadrado">
@@ -131,7 +130,7 @@
     </div>
 
     <!--Página reservas-->
-    <div class="page" id="page6">
+    <div class="page" id="pagina6">
         <div class="cuadro-reservas">
         <div>
             <div class="texto-reserva">
@@ -185,7 +184,7 @@
     </div>
 
     <!--Página confirmación reserva-->
-    <div class="page" id="page7">
+    <div class="page" id="pagina7">
         <div class="confirmacion">
             <h2>¡THANKS!</h2>        
             <div class="texto-confirmacion">
@@ -251,7 +250,7 @@
     </div>
 
     <!--Página de revisión del pedido-->
-    <div class="page" id="page9">
+    <div class="page" id="pagina9">
         <div class="confirmacion2">
             <h2>REVIEW MY ORDER</h2>
             <div class="texto-confirmacion2">
@@ -270,7 +269,7 @@
     </div>
 
     <!--Página de pago del pedido-->
-    <div class="page" id="page10">
+    <div class="page" id="pagina10">
         <div class="pag-pago">
             <h2>ORDER PAYMENT</h2>
             <form class="formulario1" id="formulario3"> 
@@ -292,7 +291,7 @@
     </div>
 
     <!--Página de confirmación del pedido-->
-    <div class="page" id="page11">
+    <div class="page" id="pagina11">
         <div class="confirmacion3">
             <h2>¡THANKS!</h2>        
             <div class="texto-confirmacion3">
@@ -306,7 +305,7 @@
     </div>
 
     <!--Página de seguimiento del pedido-->
-    <div class="page" id="page12">
+    <div class="page" id="pagina12">
         <div class="seguimiento-pedido">
             <h2>ORDER TRACKING</h2>
             <div class="fotos-seguimiento">
@@ -339,6 +338,6 @@
             <img src="img/facebook.png" alt="facebook" width="27" height="25">
         </a>
     </footer>
-
+    <script src="jscript.js"></script>
 </body>
 </html>
